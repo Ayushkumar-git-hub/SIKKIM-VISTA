@@ -1,3 +1,100 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "immersive-1",
+      "description": "Panoramic view of a monastery on a mountain.",
+      "imageUrl": "https://picsum.photos/seed/immersive1/1200/800",
+      "imageHint": "monastery mountain"
+    },
+    {
+      "id": "immersive-2",
+      "description": "A serene lake surrounded by snow-capped peaks.",
+      "imageUrl": "https://picsum.photos/seed/immersive2/1200/800",
+      "imageHint": "lake mountains"
+    },
+    {
+      "id": "immersive-3",
+      "description": "Lush green valley with a river flowing through it.",
+      "imageUrl": "https://picsum.photos/seed/immersive3/1200/800",
+      "imageHint": "valley river"
+    },
+    {
+      "id": "immersive-4",
+      "description": "Close-up of intricate carvings on a monastery wall.",
+      "imageUrl": "https://picsum.photos/seed/immersive4/1200/800",
+      "imageHint": "monastery carvings"
+    },
+    {
+      "id": "immersive-5",
+      "description": "Suspension bridge decorated with prayer flags.",
+      "imageUrl": "https://picsum.photos/seed/immersive5/1200/800",
+      "imageHint": "bridge flags"
+    },
+    {
+      "id": "narrative-1",
+      "description": "A statue of a revered spiritual figure.",
+      "imageUrl": "https://picsum.photos/seed/narrative1/600/400",
+      "imageHint": "statue spiritual"
+    },
+    {
+      "id": "narrative-2",
+      "description": "A group of people in traditional attire.",
+      "imageUrl": "https://picsum.photos/seed/narrative2/600/400",
+      "imageHint": "people traditional"
+    },
+    {
+      "id": "narrative-3",
+      "description": "An old palace or fort on a hilltop.",
+      "imageUrl": "https://picsum.photos/seed/narrative3/600/400",
+      "imageHint": "palace fort"
+    },
+    {
+      "id": "narrative-4",
+      "description": "An artist painting a detailed religious scroll.",
+      "imageUrl": "https://picsum.photos/seed/narrative4/600/400",
+      "imageHint": "artist painting"
+    },
+    {
+      "id": "craft-1",
+      "description": "A woven hat made of natural fibers.",
+      "imageUrl": "https://picsum.photos/seed/craft1/400/400",
+      "imageHint": "woven hat"
+    },
+    {
+      "id": "craft-2",
+      "description": "A colorful and detailed religious painting.",
+      "imageUrl": "https://picsum.photos/seed/craft2/400/400",
+      "imageHint": "religious painting"
+    },
+    {
+      "id": "craft-3",
+      "description": "A small, intricately carved wooden table.",
+      "imageUrl": "https://picsum.photos/seed/craft3/400/400",
+      "imageHint": "carved table"
+    },
+    {
+      "id": "craft-4",
+      "description": "A metallic cylinder with embossed script.",
+      "imageUrl": "https://picsum.photos/seed/craft4/400/400",
+      "imageHint": "prayer wheel"
+    },
+    {
+      "id": "craft-5",
+      "description": "A thick, colorful carpet with symbolic patterns.",
+      "imageUrl": "https://picsum.photos/seed/craft5/400/400",
+      "imageHint": "wool carpet"
+    },
+    {
+      "id": "craft-6",
+      "description": "A brass bowl with a wooden mallet.",
+      "imageUrl": "https://picsum.photos/seed/craft6/400/400",
+      "imageHint": "singing bowl"
+    },
+    {
+      "id": "map-background",
+      "description": "A stylized, abstract map with topographical lines.",
+      "imageUrl": "https://picsum.photos/seed/mapbg/1600/1200",
+      "imageHint": "map abstract"
+    }
+  ]
 }
