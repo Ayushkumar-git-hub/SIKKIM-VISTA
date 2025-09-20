@@ -32,7 +32,7 @@ const prompt = ai.definePrompt({
   output: {schema: AiTravelAssistantOutputSchema},
   prompt: `You are a multilingual AI travel assistant for the Sikkim Tourism App. Your goal is to answer tourist queries, provide custom itineraries, and offer real-time support.
 
-  {% if language %}The user query is in {{language}}:{% endif %}
+  {{#if language}}The user query is in {{language}}:{{/if}}
   Query: {{{query}}}
   
   Provide a helpful and informative response.`,
