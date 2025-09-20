@@ -92,9 +92,9 @@
     },
     {
       "id": "map-background",
-      "description": "A stylized, abstract map with topographical lines.",
-      "imageUrl": "https://picsum.photos/seed/mapbg/1600/1200",
-      "imageHint": "map abstract"
+      "description": "A satellite view of the Sikkim region.",
+      "imageUrl": "https://picsum.photos/seed/sikkimmap/1600/1200",
+      "imageHint": "satellite map"
     }
   ]
 }
