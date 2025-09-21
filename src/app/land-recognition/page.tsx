@@ -7,30 +7,35 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
-import { Camera, File, Loader2, Upload } from "lucide-react";
+import { Camera, File, Loader2, Upload, Video, VideoOff } from "lucide-react";
 import { recognizeLand } from '@/ai/flows/recognize-land-flow';
 import Image from 'next/image';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
+import { Switch } from '@/components/ui/switch';
+import { Label } from '@/components/ui/label';
 
 export default function LandRecognitionPage() {
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
   const [recognitionResult, setRecognitionResult] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
+  const [isCameraOn, setIsCameraOn] = useState(true);
   const [hasCameraPermission, setHasCameraPermission] = useState<boolean | null>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const { toast } = useToast();
+  const streamRef = useRef<MediaStream | null>(null);
 
   useEffect(() => {
-    const getCameraPermission = async () => {
+    const enableCamera = async () => {
       if (typeof navigator.mediaDevices?.getUserMedia !== 'function') {
         setHasCameraPermission(false);
         return;
       }
       try {
         const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+        streamRef.current = stream;
         setHasCameraPermission(true);
         if (videoRef.current) {
           videoRef.current.srcObject = stream;
@@ -40,15 +45,27 @@ export default function LandRecognitionPage() {
         setHasCameraPermission(false);
       }
     };
-    getCameraPermission();
+
+    const disableCamera = () => {
+        if (streamRef.current) {
+            streamRef.current.getTracks().forEach(track => track.stop());
+            streamRef.current = null;
+            if (videoRef.current) {
+                videoRef.current.srcObject = null;
+            }
+        }
+    };
+
+    if (isCameraOn) {
+        enableCamera();
+    } else {
+        disableCamera();
+    }
 
     return () => {
-      if (videoRef.current && videoRef.current.srcObject) {
-        const stream = videoRef.current.srcObject as MediaStream;
-        stream.getTracks().forEach(track => track.stop());
-      }
+      disableCamera();
     }
-  }, []);
+  }, [isCameraOn]);
 
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
@@ -64,7 +81,7 @@ export default function LandRecognitionPage() {
   };
 
   const handleCaptureFromCamera = () => {
-    if (videoRef.current && canvasRef.current) {
+    if (isCameraOn && videoRef.current && canvasRef.current) {
         const video = videoRef.current;
         const canvas = canvasRef.current;
         canvas.width = video.videoWidth;
@@ -77,6 +94,12 @@ export default function LandRecognitionPage() {
             setSelectedFile(null); // Clear file selection
             setRecognitionResult(null);
         }
+    } else {
+        toast({
+            variant: "destructive",
+            title: "Camera is Off",
+            description: "Please turn on the camera to capture a photo.",
+        });
     }
   };
   
@@ -120,12 +143,31 @@ export default function LandRecognitionPage() {
         <div className="grid gap-8 md:grid-cols-2">
             <Card>
                 <CardHeader>
-                    <CardTitle>Capture or Upload an Image</CardTitle>
-                    <CardDescription>Use your camera to take a photo or upload an image file from your device.</CardDescription>
+                    <div className="flex justify-between items-center">
+                        <div>
+                            <CardTitle>Capture or Upload an Image</CardTitle>
+                            <CardDescription>Use your camera to take a photo or upload an image file from your device.</CardDescription>
+                        </div>
+                         {hasCameraPermission !== false && (
+                            <div className="flex items-center space-x-2">
+                                <Switch id="camera-switch" checked={isCameraOn} onCheckedChange={setIsCameraOn} />
+                                <Label htmlFor="camera-switch">Camera</Label>
+                            </div>
+                        )}
+                    </div>
                 </CardHeader>
                 <CardContent className="space-y-4">
                    <div className="space-y-2">
-                        <video ref={videoRef} className="w-full aspect-video rounded-md bg-muted" autoPlay muted playsInline />
+                        <div className="w-full aspect-video rounded-md bg-muted flex items-center justify-center">
+                           {isCameraOn ? (
+                                <video ref={videoRef} className="w-full h-full object-cover rounded-md" autoPlay muted playsInline />
+                           ) : (
+                                <div className="flex flex-col items-center text-muted-foreground">
+                                    <VideoOff className="w-16 h-16" />
+                                    <p>Camera is off</p>
+                                </div>
+                           )}
+                        </div>
                         {hasCameraPermission === false && (
                             <Alert variant="destructive">
                                 <Camera className="h-4 w-4" />
@@ -138,7 +180,7 @@ export default function LandRecognitionPage() {
                         <canvas ref={canvasRef} className="hidden" />
                     </div>
                     <div className="flex flex-col sm:flex-row gap-2">
-                        <Button onClick={handleCaptureFromCamera} disabled={!hasCameraPermission} className="flex-1">
+                        <Button onClick={handleCaptureFromCamera} disabled={!hasCameraPermission || !isCameraOn}>
                             <Camera className="mr-2 h-4 w-4" /> Capture Photo
                         </Button>
                         <Button onClick={() => fileInputRef.current?.click()} variant="outline" className="flex-1">
