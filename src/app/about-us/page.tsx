@@ -2,31 +2,7 @@
 import AppLayout from "@/components/layout/app-layout";
 import { PageHeader } from "@/components/page-header";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Users, Target, Eye, Mountain } from "lucide-react";
-
-const teamMembers = [
-  {
-    name: "John Doe",
-    role: "Lead Developer",
-    avatarSeed: "team1",
-  },
-  {
-    name: "Jane Smith",
-    role: "UI/UX Designer",
-    avatarSeed: "team2",
-  },
-  {
-    name: "Peter Jones",
-    role: "AI Specialist",
-    avatarSeed: "team3",
-  },
-   {
-    name: "Emily White",
-    role: "Content & Research",
-    avatarSeed: "team4",
-  },
-];
+import { Target, Eye, Mountain } from "lucide-react";
 
 export default function AboutUsPage() {
   return (
@@ -34,7 +10,7 @@ export default function AboutUsPage() {
       <main className="flex-1 p-4 md:p-8">
         <PageHeader
           title="About Sikkim Explorer"
-          description="Meet the team dedicated to bringing you the ultimate guide to the treasures of Sikkim."
+          description="Learn about our mission to bring you the ultimate guide to the treasures of Sikkim."
         />
 
         <div className="space-y-8">
@@ -75,32 +51,7 @@ export default function AboutUsPage() {
                     </CardContent>
                 </Card>
             </div>
-
-            <Card>
-                <CardHeader>
-                    <CardTitle className="flex items-center gap-2">
-                        <Users className="w-6 h-6 text-primary" />
-                        <span>Meet the Team</span>
-                    </CardTitle>
-                    <CardDescription>The minds behind the magic.</CardDescription>
-                </CardHeader>
-                <CardContent className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-                {teamMembers.map((member) => (
-                    <div key={member.name} className="flex flex-col items-center gap-2">
-                        <Avatar className="w-20 h-20 border-2 border-primary">
-                            <AvatarImage src={`https://picsum.photos/seed/${member.avatarSeed}/100/100`} alt={member.name} />
-                            <AvatarFallback>{member.name.charAt(0)}</AvatarFallback>
-                        </Avatar>
-                        <div className="mt-2">
-                            <p className="font-semibold">{member.name}</p>
-                            <p className="text-sm text-muted-foreground">{member.role}</p>
-                        </div>
-                    </div>
-                ))}
-                </CardContent>
-            </Card>
         </div>
-
       </main>
     </AppLayout>
   );
