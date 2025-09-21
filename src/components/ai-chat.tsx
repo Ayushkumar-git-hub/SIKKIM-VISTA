@@ -9,6 +9,8 @@ import { cn } from "@/lib/utils";
 import { Bot, Send, User } from "lucide-react";
 import React, { useState, useRef, useEffect } from "react";
 import { useToast } from "@/hooks/use-toast";
+import Image from "next/image";
+import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 interface Message {
   role: "user" | "assistant";
@@ -21,6 +23,7 @@ export function AiChat() {
   const [isLoading, setIsLoading] = useState(false);
   const { toast } = useToast();
   const scrollAreaRef = useRef<HTMLDivElement>(null);
+  const yetiAvatar = PlaceHolderImages.find(img => img.id === 'yeti-avatar');
 
   useEffect(() => {
     if (scrollAreaRef.current) {
@@ -64,15 +67,23 @@ export function AiChat() {
     }
   };
 
+  const YetiAvatar = () => (
+    <Avatar className="w-10 h-10 border">
+        {yetiAvatar ? (
+            <AvatarImage src={yetiAvatar.imageUrl} alt="Yatra Yeti" />
+        ) : (
+            <AvatarFallback><Bot /></AvatarFallback>
+        )}
+    </Avatar>
+  );
+
   return (
     <div className="flex flex-col h-full max-h-[calc(100vh-120px)]">
       <ScrollArea className="flex-1 p-4" ref={scrollAreaRef}>
         <div className="space-y-6">
           {messages.length === 0 && (
              <div className="flex items-start gap-4">
-              <Avatar className="w-10 h-10 border">
-                <AvatarFallback><Bot /></AvatarFallback>
-              </Avatar>
+              <YetiAvatar />
               <div className="p-4 rounded-lg bg-card max-w-lg">
                 <p className="font-medium text-card-foreground">Yatra Yeti</p>
                 <p className="text-card-foreground">Hello! How can I help you plan your trip to Sikkim today? Ask me about places, itineraries, or culture.</p>
@@ -88,9 +99,7 @@ export function AiChat() {
               )}
             >
               {message.role === "assistant" && (
-                <Avatar className="w-10 h-10 border">
-                  <AvatarFallback><Bot /></AvatarFallback>
-                </Avatar>
+                <YetiAvatar />
               )}
               <div
                 className={cn(
@@ -116,9 +125,7 @@ export function AiChat() {
           ))}
           {isLoading && (
             <div className="flex items-start gap-4">
-              <Avatar className="w-10 h-10 border">
-                <AvatarFallback><Bot /></AvatarFallback>
-              </Avatar>
+              <YetiAvatar />
               <div className="p-4 rounded-lg bg-card max-w-lg">
                  <div className="flex items-center space-x-2">
                     <span className="h-2 w-2 bg-muted-foreground rounded-full animate-pulse [animation-delay:-0.3s]"></span>
