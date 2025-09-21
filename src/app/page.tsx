@@ -10,7 +10,8 @@ import {
   ShoppingBag,
   ArrowRight,
   ScanLine,
-  Ticket
+  Ticket,
+  LifeBuoy
 } from "lucide-react";
 import Link from "next/link";
 
@@ -77,6 +78,13 @@ const features = [
     icon: Ticket,
     href: "/ticket-booking",
     color: "text-pink-500",
+  },
+  {
+    title: "Help & FAQ",
+    description: "Find answers to your questions.",
+    icon: LifeBuoy,
+    href: "/help",
+    color: "text-gray-500",
   },
 ];
 
