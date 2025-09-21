@@ -377,6 +377,7 @@ export const restaurantBookings = [
     name: 'Taste of Tibet',
     cuisine: 'Tibetan & Chinese, Gangtok',
     priceRange: '₹₹ - ₹₹₹',
+    reservationFee: '100.00',
     imageId: 'booking-restaurant-1'
   },
   {
@@ -384,6 +385,7 @@ export const restaurantBookings = [
     name: 'Nimtho',
     cuisine: 'Authentic Sikkimese, Gangtok',
     priceRange: '₹₹ - ₹₹₹',
+    reservationFee: '150.00',
     imageId: 'booking-restaurant-2'
   },
   {
@@ -391,6 +393,7 @@ export const restaurantBookings = [
     name: 'The Coffee Shop',
     cuisine: 'Multi-Cuisine, Pelling',
     priceRange: '₹₹₹',
+    reservationFee: '200.00',
     imageId: 'booking-restaurant-3'
   },
   {
@@ -398,6 +401,7 @@ export const restaurantBookings = [
     name: 'Cafe Live & Loud',
     cuisine: 'Cafe & Bar, Gangtok',
     priceRange: '₹₹ - ₹₹₹',
+    reservationFee: '120.00',
     imageId: 'booking-restaurant-4'
   }
 ];

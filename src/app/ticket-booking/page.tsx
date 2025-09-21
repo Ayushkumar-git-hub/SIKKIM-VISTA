@@ -162,7 +162,10 @@ export default function TicketBookingPage() {
                       <CardDescription className="mt-1 text-sm">{item.cuisine}</CardDescription>
                     </CardContent>
                     <CardFooter className="p-4 flex justify-between items-center">
-                       <div className="font-semibold text-muted-foreground">{item.priceRange}</div>
+                       <div className="flex items-center text-xl font-bold text-primary">
+                        <IndianRupee className="h-5 w-5 mr-1" />
+                        <span>{item.reservationFee}</span>
+                      </div>
                       <Button onClick={() => handleBooking(item.name)}>
                         <UtensilsCrossed className="mr-2 h-4 w-4" /> Reserve Table
                       </Button>
