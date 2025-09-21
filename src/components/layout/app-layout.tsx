@@ -91,18 +91,20 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
         </SidebarContent>
         <SidebarFooter>
            <Separator className="my-2 bg-sidebar-border group-data-[collapsible=icon]:hidden" />
-           <div className="flex items-center gap-3 p-2 group-data-[collapsible=icon]:p-0 group-data-[collapsible=icon]:justify-center">
-              <Avatar className="h-9 w-9">
-                <AvatarImage src="https://picsum.photos/seed/user-avatar/100/100" alt="User" />
-                <AvatarFallback>
-                  <User />
-                </AvatarFallback>
-              </Avatar>
-              <div className="group-data-[collapsible=icon]:hidden">
-                <p className="font-semibold text-sm text-sidebar-foreground">Guest User</p>
-                <p className="text-xs text-sidebar-foreground/70">guest@example.com</p>
+           <Link href="/auth/sign-in" className="block p-2 group-data-[collapsible=icon]:p-0">
+             <div className="flex items-center gap-3 group-data-[collapsible=icon]:justify-center">
+                <Avatar className="h-9 w-9">
+                  <AvatarImage src="https://picsum.photos/seed/user-avatar/100/100" alt="User" />
+                  <AvatarFallback>
+                    <User />
+                  </AvatarFallback>
+                </Avatar>
+                <div className="group-data-[collapsible=icon]:hidden">
+                  <p className="font-semibold text-sm text-sidebar-foreground">Guest User</p>
+                  <p className="text-xs text-sidebar-foreground/70">Sign In</p>
+                </div>
               </div>
-            </div>
+            </Link>
         </SidebarFooter>
       </Sidebar>
       <SidebarInset>
