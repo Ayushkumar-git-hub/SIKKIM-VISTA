@@ -1,4 +1,7 @@
 
+"use client";
+
+import { useEffect } from "react";
 import AppLayout from "@/components/layout/app-layout";
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { 
@@ -16,6 +19,7 @@ import {
   Users
 } from "lucide-react";
 import Link from "next/link";
+import { useToast } from "@/hooks/use-toast";
 
 const features = [
   {
@@ -98,6 +102,22 @@ const features = [
 ];
 
 export default function Home() {
+  const { toast } = useToast();
+
+  useEffect(() => {
+    const hasVisitedBefore = localStorage.getItem('hasVisitedSikkimExplorer');
+    if (!hasVisitedBefore) {
+      setTimeout(() => {
+        toast({
+          title: "Welcome from Yatra Yeti!",
+          description: "I'm your AI guide for Sikkim Explorer. I can help you plan your trip, find places, and much more. Click my icon on the bottom right to start chatting!",
+        });
+        localStorage.setItem('hasVisitedSikkimExplorer', 'true');
+      }, 1000);
+    }
+  }, [toast]);
+
+
   return (
     <AppLayout>
       <main className="flex-1 p-4 md:p-8">
