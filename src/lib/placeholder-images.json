@@ -144,6 +144,12 @@
       "description": "A view of a snow-covered mountain range.",
       "imageUrl": "https://picsum.photos/seed/ticket_place4/800/600",
       "imageHint": "mountain range"
+    },
+    {
+      "id": "yeti-avatar",
+      "description": "Avatar of Yatra Yeti, the AI assistant.",
+      "imageUrl": "https://picsum.photos/seed/yeti-avatar/100/100",
+      "imageHint": "yeti monster"
     }
   ]
 }

@@ -37,6 +37,8 @@ import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 import { Separator } from '../ui/separator';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '../ui/sheet';
 import { AiChat } from '../ai-chat';
+import Image from 'next/image';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const navItems = [
   { href: '/', label: 'Dashboard', icon: Home },
@@ -54,6 +56,7 @@ const navItems = [
 
 export default function AppLayout({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
+  const yetiAvatar = PlaceHolderImages.find(img => img.id === 'yeti-avatar');
 
   return (
     <SidebarProvider>
@@ -113,8 +116,12 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
         {children}
         <Sheet>
           <SheetTrigger asChild>
-            <Button className="fixed bottom-6 right-6 h-16 w-16 rounded-full shadow-lg z-40" size="icon">
-              <Bot className="h-8 w-8" />
+            <Button className="fixed bottom-6 right-6 h-16 w-16 rounded-full shadow-lg z-40 p-0 overflow-hidden" size="icon">
+              {yetiAvatar ? (
+                <Image src={yetiAvatar.imageUrl} alt="Yatra Yeti" fill className="object-cover" />
+              ) : (
+                <Bot className="h-8 w-8" />
+              )}
               <span className="sr-only">Open Yatra Yeti</span>
             </Button>
           </SheetTrigger>
