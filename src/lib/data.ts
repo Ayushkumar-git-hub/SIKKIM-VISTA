@@ -1,3 +1,6 @@
+
+export type Language = 'en' | 'ne' | 'hi';
+
 export const regionalEvents = [
   {
     month: "January",
@@ -76,29 +79,66 @@ export const userDocuments = [
   },
 ];
 
-export const narrativeWalkthroughs = [
+export const narrativeWalkthroughs: {
+  id: string;
+  title: Record<Language, string>;
+  description: Record<Language, string>;
+  imageId: string;
+}[] = [
   {
     id: "narrative1",
-    title: "The Legend of Guru Padmasambhava",
-    description: "Discover the story of the patron saint who blessed Sikkim and hid sacred treasures across the land.",
+    title: {
+      en: "The Legend of Guru Padmasambhava",
+      ne: "गुरु पद्मसंभवको कथा",
+      hi: "गुरु पद्मसंभव की कथा",
+    },
+    description: {
+      en: "Discover the story of the patron saint who blessed Sikkim and hid sacred treasures across the land.",
+      ne: "सिक्किमलाई आशीर्वाद दिने र देशभरि पवित्र खजाना लुकाउने संरक्षक संतको कथा पत्ता लगाउनुहोस्।",
+      hi: "उस संरक्षक संत की कहानी खोजें जिन्होंने सिक्किम को आशीर्वाद दिया और पूरे देश में पवित्र खजाने छिपाए।",
+    },
     imageId: "narrative-1",
   },
   {
     id: "narrative2",
-    title: "Folklore of the Lepcha People",
-    description: "Dive into the ancient oral traditions of Sikkim's indigenous inhabitants, the 'Rongkup'.",
+    title: {
+      en: "Folklore of the Lepcha People",
+      ne: "लेप्चा मानिसहरूको लोककथा",
+      hi: "लेप्चा लोगों की लोककथा",
+    },
+    description: {
+      en: "Dive into the ancient oral traditions of Sikkim's indigenous inhabitants, the 'Rongkup'.",
+      ne: "सिक्किमका आदिवासी बासिन्दा 'रोग्कूप' को पुरानो मौखिक परम्परामा डुब्नुहोस्।",
+      hi: "सिक्किम के स्वदेशी निवासियों, 'रोंगकुप' की प्राचीन मौखिक परंपराओं में गोता लगाएँ।",
+    },
     imageId: "narrative-2",
   },
   {
     id: "narrative3",
-    title: "The Chogyals of Sikkim: A Royal History",
-    description: "Learn about the Namgyal dynasty that ruled Sikkim for more than 300 years.",
+    title: {
+      en: "The Chogyals of Sikkim: A Royal History",
+      ne: "सिक्किमका चोग्यालहरू: एक शाही इतिहास",
+      hi: "सिक्किम के चोग्याल: एक शाही इतिहास",
+    },
+    description: {
+      en: "Learn about the Namgyal dynasty that ruled Sikkim for more than 300 years.",
+      ne: "सिक्किममा ३०० वर्षभन्दा बढी शासन गर्ने नामग्याल वंशको बारेमा जान्नुहोस्।",
+      hi: "नामग्याल राजवंश के बारे में जानें जिसने सिक्किम पर ३०० से अधिक वर्षों तक शासन किया।",
+    },
     imageId: "narrative-3",
   },
   {
     id: "narrative4",
-    title: "Secrets of Thangka Painting",
-    description: "Explore the intricate art of Tibetan Buddhist scroll painting and its deep spiritual meaning.",
+    title: {
+      en: "Secrets of Thangka Painting",
+      ne: "थाङ्का चित्रकलाको रहस्य",
+      hi: "थांगका चित्रकला के रहस्य",
+    },
+    description: {
+      en: "Explore the intricate art of Tibetan Buddhist scroll painting and its deep spiritual meaning.",
+      ne: "तिब्बती बौद्ध स्क्रोल चित्रकलाको जटिल कला र यसको गहिरो आध्यात्मिक अर्थ अन्वेषण गर्नुहोस्।",
+      hi: "तिब्बती बौद्ध स्क्रॉल पेंटिंग की जटिल कला और उसके गहरे आध्यात्मिक अर्थ का अन्वेषण करें।",
+    },
     imageId: "narrative-4",
   },
 ];
