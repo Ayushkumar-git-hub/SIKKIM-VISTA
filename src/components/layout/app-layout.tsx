@@ -27,6 +27,7 @@ import {
   Home,
   Mountain,
   User,
+  ScanLine,
 } from 'lucide-react';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 import { Separator } from '../ui/separator';
@@ -40,6 +41,7 @@ const navItems = [
   { href: '/regional-calendar', label: 'Regional Calendar', icon: CalendarIcon },
   { href: '/narrative-walkthroughs', label: 'Narratives', icon: BookOpen },
   { href: '/local-crafts', label: 'Local Crafts', icon: ShoppingBag },
+  { href: '/land-recognition', label: 'Land Recognition', icon: ScanLine },
 ];
 
 export default function AppLayout({ children }: { children: React.ReactNode }) {
