@@ -94,7 +94,7 @@
     {
       "id": "map-background",
       "description": "A satellite-style map of a mountainous region.",
-      "imageUrl": "https://picsum.photos/seed/sikkimmap/1600/1200",
+      "imageUrl": "https://picsum.photos/seed/sikkimmap2/1600/1200",
       "imageHint": "satellite map"
     }
   ]
