@@ -3,21 +3,19 @@
 
 import AppLayout from "@/components/layout/app-layout";
 import { PageHeader } from "@/components/page-header";
-import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
-import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { LocateFixed, User, Loader2 } from "lucide-react";
-import Image from "next/image";
+import { LocateFixed, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
+import { GoogleMapComponent } from "@/components/google-map";
+import { Card } from "@/components/ui/card";
 
 type UserLocation = {
-  top: string;
-  left: string;
+  lat: number;
+  lng: number;
 };
 
 export default function LocationTrackerPage() {
-  const mapImage = PlaceHolderImages.find(img => img.id === 'map-background');
   const { toast } = useToast();
   const [userLocation, setUserLocation] = useState<UserLocation | null>(null);
   const [isTracking, setIsTracking] = useState(false);
@@ -36,10 +34,8 @@ export default function LocationTrackerPage() {
 
     navigator.geolocation.getCurrentPosition(
       (position) => {
-        // Simulate converting GPS coordinates to a position on the static map image.
-        // In a real app, this would involve a complex calculation.
-        const simulatedLocation = { top: '45%', left: '50%' };
-        setUserLocation(simulatedLocation);
+        const { latitude, longitude } = position.coords;
+        setUserLocation({ lat: latitude, lng: longitude });
         toast({
           title: "Location Found",
           description: "Your current location is marked on the map.",
@@ -82,39 +78,9 @@ export default function LocationTrackerPage() {
             </div>
         </div>
         <div className="flex-1 w-full flex items-center justify-center">
-          <div className="relative w-full max-w-5xl aspect-[4/3] rounded-lg overflow-hidden border shadow-sm">
-            {mapImage && (
-              <Image
-                src={mapImage.imageUrl}
-                alt="Satellite map of Sikkim"
-                fill
-                className="object-cover"
-                data-ai-hint={mapImage.imageHint}
-              />
-            )}
-            
-            {userLocation && (
-              <Popover open={true}>
-                <PopoverTrigger asChild>
-                    <div
-                        className="absolute transform -translate-x-1/2 -translate-y-1/2"
-                        style={{ top: userLocation.top, left: userLocation.left }}
-                        aria-label="Your current location"
-                    >
-                        <div className="relative">
-                            <User className="w-7 h-7 text-white bg-blue-600 rounded-full p-1 border-2 border-white shadow-lg" />
-                            <div className="absolute inset-0 rounded-full bg-blue-500/50 animate-ping -z-10" />
-                        </div>
-                    </div>
-                </PopoverTrigger>
-                <PopoverContent className="w-48">
-                  <h3 className="font-bold text-lg text-primary">You are here</h3>
-                  <p className="text-sm text-muted-foreground mt-1">Your estimated current location.</p>
-                </PopoverContent>
-              </Popover>
-            )}
-
-          </div>
+            <Card className="w-full max-w-5xl aspect-[4/3] rounded-lg overflow-hidden border shadow-sm">
+                <GoogleMapComponent userLocation={userLocation} />
+            </Card>
         </div>
       </main>
     </AppLayout>
