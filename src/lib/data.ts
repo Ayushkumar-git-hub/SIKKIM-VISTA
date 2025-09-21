@@ -276,6 +276,11 @@ export const mapPois = [
   { id: 'poi4', name: 'Pelling', top: '27.3167', left: '88.2333', description: 'A town famous for its breathtaking views of Khangchendzonga.' },
   { id: 'poi5', name: 'Yumthang Valley', top: '27.8333', left: '88.6833', description: 'The "Valley of Flowers", a stunning alpine meadow.' },
   { id: 'poi6', name: 'Gurudongmar Lake', top: '28.0257', left: '88.7097', description: 'One of the highest lakes in the world, considered sacred.' },
+  { id: 'poi7', name: 'Pemayangtse Monastery', top: '27.3005', left: '88.2536', description: 'One of the oldest and most premier monasteries of Sikkim.'},
+  { id: 'poi8', name: 'Enchey Monastery', top: '27.3465', left: '88.6185', description: 'An important monastery of the Nyingma order, located in Gangtok.'},
+  { id: 'poi9', name: 'Tashiding Monastery', top: '27.2431', left: '88.2858', description: 'Considered the holiest monastery in Sikkim, on a hilltop.'},
+  { id: 'poi10', name: 'Khangchendzonga National Park', top: '27.6711', left: '88.3268', description: 'A UNESCO World Heritage site with a diverse ecosystem.'},
+  { id: 'poi11', name: 'Samdruptse Monastery', top: '27.2423', left: '88.3582', description: 'Home to the giant statue of Guru Padmasambhava.'},
 ];
 
 export const eventTickets = [
