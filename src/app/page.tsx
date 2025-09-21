@@ -115,7 +115,7 @@ export default function Home() {
     <AppLayout>
       <main className="flex-1 p-4 md:p-8">
         <div className="mb-8">
-          <h1 className="font-headline text-4xl md:text-5xl font-bold text-primary tracking-tight">
+          <h1 className="font-headline text-4xl md:text-5xl font-bold text-black tracking-tight">
             Welcome to Sikkim Explorer
           </h1>
           <p className="mt-2 text-lg text-muted-foreground max-w-2xl">
