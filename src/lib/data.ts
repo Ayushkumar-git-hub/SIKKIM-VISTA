@@ -5,38 +5,38 @@ export const regionalEvents = [
   {
     month: "January",
     events: [
-      { name: "Maghe Sankranti", date: "Jan 14", description: "A harvest festival celebrating the end of winter solstice month." },
+      { name: "Maghe Sankranti", date: "Mid-January", description: "A harvest festival marking the end of the winter solstice month, celebrated with traditional food and fairs." },
     ],
   },
   {
     month: "February",
     events: [
-      { name: "Losar", date: "Feb 10-12", description: "The Tibetan New Year, celebrated with fervor in monasteries." },
-      { name: "Sonam Lhochhar", date: "Feb 10", description: "A new year festival of the Tamang community." },
+      { name: "Losar (Tibetan New Year)", date: "Varies (Tibetan Lunar Calendar)", description: "The Tibetan New Year, celebrated with great fervor in monasteries with prayers and cultural performances." },
+      { name: "Sonam Lhochhar", date: "Varies (Tamang Calendar)", description: "The new year festival of the Tamang community, celebrated with cultural events and family gatherings." },
     ],
   },
   {
     month: "May",
     events: [
-      { name: "Saga Dawa", date: "May 23", description: "The most sacred Buddhist festival, commemorating Buddha's birth, enlightenment, and nirvana." },
+      { name: "Saga Dawa", date: "Full moon of 4th Tibetan month", description: "The most sacred Buddhist festival, commemorating Buddha's birth, enlightenment, and attainment of nirvana." },
     ],
   },
   {
     month: "August",
     events: [
-      { name: "Pang Lhabsol", date: "Aug 20", description: "A unique festival worshipping Mount Khangchendzonga." },
+      { name: "Pang Lhabsol", date: "15th day of 7th Tibetan month", description: "A unique festival worshipping Mount Khangchendzonga as a guardian deity, featuring warrior dances." },
     ],
   },
   {
-    month: "September",
+    month: "October-November",
     events: [
-      { name: "Indra Jatra", date: "Sep 17", description: "A festival celebrated by the Nepalese community to honor Indra, the king of heaven." },
+      { name: "Tihar (Diwali)", date: "Varies (Hindu Lunar Calendar)", description: "The festival of lights, celebrated by the Nepalese community with diyas, decorations, and special ceremonies." },
     ],
   },
   {
     month: "December",
     events: [
-      { name: "Losoong/Namsoong", date: "Dec 28", description: "The Sikkimese New Year, celebrated by Bhutias and Lepchas with traditional sports and cuisine." },
+      { name: "Losoong / Namsoong", date: "End of 10th Tibetan month", description: "The Sikkimese New Year for the Bhutia and Lepcha communities, marking the end of the harvest season with archery and feasting." },
     ],
   },
 ];
@@ -436,3 +436,5 @@ export const transportBookings = [
     imageId: 'booking-transport-4'
   }
 ];
+
+    
