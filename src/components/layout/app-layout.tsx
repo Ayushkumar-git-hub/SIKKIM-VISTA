@@ -49,7 +49,7 @@ const navItems = [
   { href: '/narrative-walkthroughs', label: 'Narratives', icon: BookOpen },
   { href: '/local-crafts', label: 'Local Crafts', icon: ShoppingBag },
   { href: '/land-recognition', label: 'Land Recognition', icon: ScanLine },
-  { href: '/ticket-booking', label: 'Ticket Booking', icon: Ticket },
+  { href: '/ticket-booking', label: 'Bookings', icon: Ticket },
   { href: '/help', label: 'Help & FAQ', icon: LifeBuoy },
   { href: '/about-us', label: 'About Us', icon: Users },
 ];

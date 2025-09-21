@@ -340,4 +340,95 @@ export const placeTickets = [
   }
 ];
 
+export const hotelBookings = [
+  {
+    id: 'hotel-1',
+    name: 'The Elgin Nor-Khill',
+    pricePerNight: '950.00',
+    type: 'Heritage Hotel, Gangtok',
+    imageId: 'booking-hotel-1'
+  },
+  {
+    id: 'hotel-2',
+    name: 'Mayfair Spa Resort & Casino',
+    pricePerNight: '1000.00',
+    type: 'Luxury Resort, Gangtok',
+    imageId: 'booking-hotel-2'
+  },
+  {
+    id: 'hotel-3',
+    name: 'Yankhang Residency',
+    pricePerNight: '450.00',
+    type: 'Boutique Hotel, Pelling',
+    imageId: 'booking-hotel-3'
+  },
+  {
+    id: 'hotel-4',
+    name: 'The Golden Crest',
+    pricePerNight: '350.00',
+    type: 'Modern Hotel, Gangtok',
+    imageId: 'booking-hotel-4'
+  }
+];
 
+export const restaurantBookings = [
+  {
+    id: 'restaurant-1',
+    name: 'Taste of Tibet',
+    cuisine: 'Tibetan & Chinese, Gangtok',
+    priceRange: '₹₹ - ₹₹₹',
+    imageId: 'booking-restaurant-1'
+  },
+  {
+    id: 'restaurant-2',
+    name: 'Nimtho',
+    cuisine: 'Authentic Sikkimese, Gangtok',
+    priceRange: '₹₹ - ₹₹₹',
+    imageId: 'booking-restaurant-2'
+  },
+  {
+    id: 'restaurant-3',
+    name: 'The Coffee Shop',
+    cuisine: 'Multi-Cuisine, Pelling',
+    priceRange: '₹₹₹',
+    imageId: 'booking-restaurant-3'
+  },
+  {
+    id: 'restaurant-4',
+    name: 'Cafe Live & Loud',
+    cuisine: 'Cafe & Bar, Gangtok',
+    priceRange: '₹₹ - ₹₹₹',
+    imageId: 'booking-restaurant-4'
+  }
+];
+
+export const transportBookings = [
+  {
+    id: 'transport-1',
+    name: 'Private Cab (Full Day)',
+    price: '900.00',
+    description: 'Explore Gangtok and nearby areas at your own pace.',
+    imageId: 'booking-transport-1'
+  },
+  {
+    id: 'transport-2',
+    name: 'Shared Taxi to Pelling',
+    price: '400.00',
+    description: 'Economical option for traveling between major towns.',
+    imageId: 'booking-transport-2'
+  },
+  {
+    id: 'transport-3',
+    name: 'Motorbike Rental (Per Day)',
+    price: '800.00',
+    description: 'For the adventurous, explore Sikkim on two wheels.',
+    imageId: 'booking-transport-3'
+  },
+  {
+    id: 'transport-4',
+    name: 'Airport Transfer (Pakyong)',
+    price: '550.00',
+    description: 'Hassle-free transfer from Pakyong Airport to your hotel.',
+    imageId: 'booking-transport-4'
+  }
+];

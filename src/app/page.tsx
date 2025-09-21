@@ -44,13 +44,6 @@ const features = [
     color: "text-green-500",
   },
   {
-    title: "Yatra Yeti",
-    description: "Get custom itineraries and 24/7 support.",
-    icon: Bot,
-    href: "/ai-assistant",
-    color: "text-purple-500",
-  },
-  {
     title: "Regional Calendar",
     description: "Discover local festivals, events, and rituals.",
     icon: Calendar,
@@ -79,8 +72,8 @@ const features = [
     color: "text-indigo-500",
   },
   {
-    title: "Ticket Booking",
-    description: "Book tickets for events and tourist places.",
+    title: "Bookings",
+    description: "Book tickets, hotels, transport and more.",
     icon: Ticket,
     href: "/ticket-booking",
     color: "text-pink-500",
