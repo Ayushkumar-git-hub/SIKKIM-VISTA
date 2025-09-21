@@ -1,3 +1,4 @@
+
 import AppLayout from "@/components/layout/app-layout";
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { 
@@ -11,7 +12,8 @@ import {
   ArrowRight,
   ScanLine,
   Ticket,
-  LifeBuoy
+  LifeBuoy,
+  Users
 } from "lucide-react";
 import Link from "next/link";
 
@@ -85,6 +87,13 @@ const features = [
     icon: LifeBuoy,
     href: "/help",
     color: "text-gray-500",
+  },
+   {
+    title: "About Us",
+    description: "Meet the team behind Sikkim Explorer.",
+    icon: Users,
+    href: "/about-us",
+    color: "text-cyan-500",
   },
 ];
 

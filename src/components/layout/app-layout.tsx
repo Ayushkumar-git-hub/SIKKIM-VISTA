@@ -1,3 +1,4 @@
+
 "use client";
 
 import React from 'react';
@@ -30,6 +31,7 @@ import {
   ScanLine,
   Ticket,
   LifeBuoy,
+  Users,
 } from 'lucide-react';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 import { Separator } from '../ui/separator';
@@ -46,6 +48,7 @@ const navItems = [
   { href: '/land-recognition', label: 'Land Recognition', icon: ScanLine },
   { href: '/ticket-booking', label: 'Ticket Booking', icon: Ticket },
   { href: '/help', label: 'Help & FAQ', icon: LifeBuoy },
+  { href: '/about-us', label: 'About Us', icon: Users },
 ];
 
 export default function AppLayout({ children }: { children: React.ReactNode }) {
