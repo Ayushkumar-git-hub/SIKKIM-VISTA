@@ -7,7 +7,8 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Siren, HeartPulse, Shield, Flame } from "lucide-react";
 
 const faqs = [
   {
@@ -36,28 +37,78 @@ const faqs = [
   },
 ];
 
+const emergencyContacts = [
+    {
+        service: 'Police',
+        number: '100',
+        icon: Shield,
+        color: 'text-blue-500'
+    },
+    {
+        service: 'Medical / Ambulance',
+        number: '102',
+        icon: HeartPulse,
+        color: 'text-red-500'
+    },
+    {
+        service: 'Disaster Management',
+        number: '1077',
+        icon: Siren,
+        color: 'text-yellow-500'
+    },
+    {
+        service: 'Fire Brigade',
+        number: '101',
+        icon: Flame,
+        color: 'text-orange-500'
+    }
+]
+
 export default function HelpPage() {
   return (
     <AppLayout>
       <main className="flex-1 p-4 md:p-8">
         <PageHeader
           title="Help & FAQ"
-          description="Find answers to frequently asked questions about the Sikkim Explorer app and traveling in Sikkim."
+          description="Find answers to frequently asked questions and access emergency contacts for your safety in Sikkim."
         />
-        <Card>
-          <CardContent className="p-6">
-            <Accordion type="single" collapsible className="w-full">
-              {faqs.map((faq, index) => (
-                <AccordionItem value={`item-${index}`} key={index}>
-                  <AccordionTrigger className="text-left">{faq.question}</AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground">
-                    {faq.answer}
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
-          </CardContent>
-        </Card>
+        <div className="space-y-8">
+            <Card className="border-destructive bg-destructive/5">
+                <CardHeader>
+                    <CardTitle className="text-destructive">Emergency Contacts</CardTitle>
+                </CardHeader>
+                <CardContent>
+                    <p className="text-muted-foreground mb-6">For any immediate assistance, please use the national emergency numbers below. These are toll-free.</p>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-center">
+                        {emergencyContacts.map((contact) => (
+                            <div key={contact.service} className="p-4 bg-background rounded-lg border">
+                                <contact.icon className={`mx-auto h-10 w-10 mb-2 ${contact.color}`} />
+                                <p className="font-semibold text-card-foreground">{contact.service}</p>
+                                <p className="text-2xl font-bold text-primary tracking-wider">{contact.number}</p>
+                            </div>
+                        ))}
+                    </div>
+                </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle>Frequently Asked Questions</CardTitle>
+              </CardHeader>
+              <CardContent className="p-6 pt-0">
+                <Accordion type="single" collapsible className="w-full">
+                  {faqs.map((faq, index) => (
+                    <AccordionItem value={`item-${index}`} key={index}>
+                      <AccordionTrigger className="text-left">{faq.question}</AccordionTrigger>
+                      <AccordionContent className="text-muted-foreground">
+                        {faq.answer}
+                      </AccordionContent>
+                    </AccordionItem>
+                  ))}
+                </Accordion>
+              </CardContent>
+            </Card>
+        </div>
       </main>
     </AppLayout>
   );
