@@ -10,7 +10,7 @@ import { eventTickets, placeTickets } from "@/lib/data";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { useToast } from "@/hooks/use-toast";
 import Image from "next/image";
-import { Ticket } from "lucide-react";
+import { IndianRupee, Ticket } from "lucide-react";
 
 export default function TicketBookingPage() {
   const getImage = (id: string) => PlaceHolderImages.find(img => img.id === id);
@@ -59,7 +59,10 @@ export default function TicketBookingPage() {
                       <CardDescription className="mt-1 text-sm">{ticket.date}</CardDescription>
                     </CardContent>
                     <CardFooter className="p-4 flex justify-between items-center">
-                      <p className="text-xl font-bold text-primary">₹{ticket.price}</p>
+                      <div className="flex items-center text-xl font-bold text-primary">
+                        <IndianRupee className="h-5 w-5 mr-1" />
+                        <span>{ticket.price}</span>
+                      </div>
                       <Button onClick={() => handleBooking(ticket.name)}>
                         <Ticket className="mr-2 h-4 w-4" /> Book Now
                       </Button>
@@ -93,7 +96,10 @@ export default function TicketBookingPage() {
                       <CardDescription className="mt-1 text-sm">{ticket.type}</CardDescription>
                     </CardContent>
                     <CardFooter className="p-4 flex justify-between items-center">
-                      <p className="text-xl font-bold text-primary">₹{ticket.price}</p>
+                      <div className="flex items-center text-xl font-bold text-primary">
+                        <IndianRupee className="h-5 w-5 mr-1" />
+                        <span>{ticket.price}</span>
+                      </div>
                       <Button onClick={() => handleBooking(ticket.name)}>
                          <Ticket className="mr-2 h-4 w-4" /> Book Now
                       </Button>

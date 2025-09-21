@@ -1,10 +1,11 @@
+
 import AppLayout from "@/components/layout/app-layout";
 import { PageHeader } from "@/components/page-header";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { localCrafts } from "@/lib/data";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { ShoppingCart } from "lucide-react";
+import { IndianRupee, ShoppingCart } from "lucide-react";
 import Image from "next/image";
 
 export default function LocalCraftsPage() {
@@ -40,7 +41,10 @@ export default function LocalCraftsPage() {
                   <CardDescription className="mt-1 text-sm">{craft.description}</CardDescription>
                 </CardContent>
                 <CardFooter className="p-4 flex justify-between items-center">
-                  <p className="text-xl font-bold text-primary">₹{craft.price}</p>
+                  <div className="flex items-center text-xl font-bold text-primary">
+                    <IndianRupee className="h-5 w-5 mr-1" />
+                    <span>{craft.price}</span>
+                  </div>
                   <Button>
                     <ShoppingCart className="mr-2 h-4 w-4" /> Add to Cart
                   </Button>
