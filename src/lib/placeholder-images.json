@@ -101,19 +101,19 @@
       "id": "ticket-event-1",
       "description": "People celebrating a colorful festival.",
       "imageUrl": "https://picsum.photos/seed/ticket_event1/800/600",
-      "imageHint": "festival celebration"
+      "imageHint": "Tibetan NewYear"
     },
     {
       "id": "ticket-event-2",
       "description": "A crowd gathered under a full moon near a stupa.",
       "imageUrl": "https://picsum.photos/seed/ticket_event2/800/600",
-      "imageHint": "stupa moon"
+      "imageHint": "Buddhist festival"
     },
     {
       "id": "ticket-event-3",
       "description": "Masked dancers performing a traditional warrior dance.",
       "imageUrl": "https://picsum.photos/seed/ticket_event3/800/600",
-      "imageHint": "masked dancers"
+      "imageHint": "warrior dance"
     },
     {
       "id": "ticket-event-4",
