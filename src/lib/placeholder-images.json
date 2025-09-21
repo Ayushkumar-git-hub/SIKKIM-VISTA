@@ -3,27 +3,27 @@
   "placeholderImages": [
     {
       "id": "immersive-1",
-      "description": "Panoramic view of a monastery on a mountain.",
+      "description": "360° view of Rumtek Monastery courtyard",
       "imageUrl": "https://picsum.photos/seed/immersive1/1200/800",
-      "imageHint": "monastery mountain"
+      "imageHint": "monastery courtyard"
     },
     {
       "id": "immersive-2",
-      "description": "A serene lake surrounded by snow-capped peaks.",
+      "description": "360° view from Pemayangtse Monastery",
       "imageUrl": "https://picsum.photos/seed/immersive2/1200/800",
-      "imageHint": "lake mountains"
+      "imageHint": "monastery mountains"
     },
     {
       "id": "immersive-3",
-      "description": "Lush green valley with a river flowing through it.",
+      "description": "A serene lake surrounded by snow-capped peaks.",
       "imageUrl": "https://picsum.photos/seed/immersive3/1200/800",
-      "imageHint": "valley river"
+      "imageHint": "lake mountains"
     },
     {
       "id": "immersive-4",
-      "description": "Close-up of intricate carvings on a monastery wall.",
+      "description": "Lush green valley with a river flowing through it.",
       "imageUrl": "https://picsum.photos/seed/immersive4/1200/800",
-      "imageHint": "monastery carvings"
+      "imageHint": "valley river"
     },
     {
       "id": "immersive-5",
