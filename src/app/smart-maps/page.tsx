@@ -1,3 +1,4 @@
+
 import AppLayout from "@/components/layout/app-layout";
 import { PageHeader } from "@/components/page-header";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
@@ -21,13 +22,13 @@ export default function SmartMapsPage() {
             {mapImage && (
               <Image
                 src={mapImage.imageUrl}
-                alt="Stylized map of Sikkim"
+                alt="Satellite map of Sikkim"
                 fill
-                className="object-contain"
+                className="object-cover"
                 data-ai-hint={mapImage.imageHint}
               />
             )}
-            <div className="absolute inset-0 bg-background/20 pointer-events-none" />
+            <div className="absolute inset-0 bg-transparent pointer-events-none" />
             {mapPois.map((poi) => (
               <Popover key={poi.id}>
                 <PopoverTrigger asChild>
