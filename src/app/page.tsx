@@ -40,7 +40,7 @@ const features = [
     color: "text-green-500",
   },
   {
-    title: "AI Travel Assistant",
+    title: "Yatra Yeti",
     description: "Get custom itineraries and 24/7 support.",
     icon: Bot,
     href: "/ai-assistant",

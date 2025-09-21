@@ -1,6 +1,6 @@
 "use client";
 
-import { aiTravelAssistant } from "@/ai/flows/ai-travel-assistant";
+import { yatraYeti } from "@/ai/flows/yatra-yeti-flow";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -41,18 +41,18 @@ export function AiChat() {
     setIsLoading(true);
 
     try {
-      const result = await aiTravelAssistant({ query: input });
+      const result = await yatraYeti({ query: input });
       const assistantMessage: Message = {
         role: "assistant",
         content: result.response,
       };
       setMessages((prev) => [...prev, assistantMessage]);
     } catch (error) {
-      console.error("AI Assistant Error:", error);
+      console.error("Yatra Yeti Error:", error);
       toast({
         variant: "destructive",
         title: "Error",
-        description: "Failed to get a response from the AI assistant.",
+        description: "Failed to get a response from Yatra Yeti.",
       });
        const errorMessage: Message = {
         role: "assistant",
@@ -74,7 +74,7 @@ export function AiChat() {
                 <AvatarFallback><Bot /></AvatarFallback>
               </Avatar>
               <div className="p-4 rounded-lg bg-card max-w-lg">
-                <p className="font-medium text-card-foreground">AI Assistant</p>
+                <p className="font-medium text-card-foreground">Yatra Yeti</p>
                 <p className="text-card-foreground">Hello! How can I help you plan your trip to Sikkim today? Ask me about places, itineraries, or culture.</p>
               </div>
             </div>
@@ -101,7 +101,7 @@ export function AiChat() {
                 )}
               >
                 <p className={cn("font-medium", message.role === "user" ? "text-primary-foreground" : "text-card-foreground")}>
-                  {message.role === "user" ? "You" : "AI Assistant"}
+                  {message.role === "user" ? "You" : "Yatra Yeti"}
                 </p>
                 <p className={cn(message.role === "user" ? "text-primary-foreground" : "text-card-foreground")}>
                   {message.content}
