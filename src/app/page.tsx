@@ -16,10 +16,13 @@ import {
   ScanLine,
   Ticket,
   LifeBuoy,
-  Users
+  Users,
+  LocateFixed
 } from "lucide-react";
 import Link from "next/link";
 import { useToast } from "@/hooks/use-toast";
+import Image from "next/image";
+import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const features = [
   {
@@ -42,6 +45,13 @@ const features = [
     icon: Map,
     href: "/smart-maps",
     color: "text-green-500",
+  },
+  {
+    title: "Location Tracker",
+    description: "Find your current location on the map.",
+    icon: LocateFixed,
+    href: "/location-tracker",
+    color: "text-purple-500",
   },
   {
     title: "Regional Calendar",
@@ -96,6 +106,7 @@ const features = [
 
 export default function Home() {
   const { toast } = useToast();
+  const heroImage = PlaceHolderImages.find(img => img.id === 'hero-background');
 
   useEffect(() => {
     const hasVisitedBefore = localStorage.getItem('hasVisitedSikkimExplorer');
@@ -113,35 +124,51 @@ export default function Home() {
 
   return (
     <AppLayout>
-      <main className="flex-1 p-4 md:p-8">
-        <div className="mb-8">
-          <h1 className="font-headline text-4xl md:text-5xl font-bold text-black tracking-tight">
-            Welcome to Sikkim Explorer
-          </h1>
-          <p className="mt-2 text-lg text-muted-foreground max-w-2xl">
-            Your all-in-one companion to discover the breathtaking beauty, vibrant culture, and hidden gems of Sikkim.
-          </p>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {features.map((feature) => (
-            <Link href={feature.href} key={feature.title} className="group">
-              <Card className="h-full hover:shadow-lg transition-shadow duration-300 flex flex-col">
-                <CardHeader className="flex-row items-start gap-4 space-y-0">
-                  <div className="flex-shrink-0">
-                    <feature.icon className={`w-8 h-8 ${feature.color}`} />
-                  </div>
-                  <div>
-                    <CardTitle>{feature.title}</CardTitle>
-                    <CardDescription>{feature.description}</CardDescription>
-                  </div>
-                </CardHeader>
-                <div className="flex-grow" />
-                <div className="p-6 pt-0 flex justify-end">
-                    <ArrowRight className="w-5 h-5 text-muted-foreground group-hover:text-accent group-hover:translate-x-1 transition-transform" />
-                </div>
-              </Card>
-            </Link>
-          ))}
+      <main className="flex-1">
+        <section className="relative h-[400px] md:h-[500px] flex items-center justify-center text-center text-white">
+            {heroImage && (
+              <Image 
+                src={heroImage.imageUrl} 
+                alt="Beautiful Sikkim mountains" 
+                fill 
+                className="object-cover"
+                data-ai-hint={heroImage.imageHint} 
+                priority
+              />
+            )}
+            <div className="absolute inset-0 bg-black/50" />
+            <div className="relative z-10 p-4">
+              <h1 className="font-headline text-4xl md:text-6xl font-bold tracking-tight">
+                Welcome to Sikkim Explorer
+              </h1>
+              <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto">
+                Your all-in-one companion to discover the breathtaking beauty, vibrant culture, and hidden gems of Sikkim.
+              </p>
+            </div>
+          </section>
+
+        <div className="p-4 md:p-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {features.map((feature) => (
+                <Link href={feature.href} key={feature.title} className="group">
+                <Card className="h-full hover:shadow-lg transition-shadow duration-300 flex flex-col">
+                    <CardHeader className="flex-row items-start gap-4 space-y-0">
+                    <div className="flex-shrink-0">
+                        <feature.icon className={`w-8 h-8 ${feature.color}`} />
+                    </div>
+                    <div>
+                        <CardTitle>{feature.title}</CardTitle>
+                        <CardDescription>{feature.description}</CardDescription>
+                    </div>
+                    </CardHeader>
+                    <div className="flex-grow" />
+                    <div className="p-6 pt-0 flex justify-end">
+                        <ArrowRight className="w-5 h-5 text-muted-foreground group-hover:text-accent group-hover:translate-x-1 transition-transform" />
+                    </div>
+                </Card>
+                </Link>
+            ))}
+            </div>
         </div>
       </main>
     </AppLayout>
