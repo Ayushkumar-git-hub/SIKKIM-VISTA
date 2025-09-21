@@ -1,8 +1,8 @@
 
 "use client";
 
-import React from 'react';
-import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
+import React, { useState } from 'react';
+import { GoogleMap, useJsApiLoader, Marker, InfoWindow } from '@react-google-maps/api';
 import { Skeleton } from './ui/skeleton';
 import { Alert, AlertDescription, AlertTitle } from './ui/alert';
 import { AlertTriangle } from 'lucide-react';
@@ -18,17 +18,28 @@ const defaultCenter = {
   lng: 88.6065,
 };
 
-interface GoogleMapComponentProps {
-  userLocation: { lat: number, lng: number } | null;
+interface Poi {
+    lat: number;
+    lng: number;
+    name: string;
+    description: string;
 }
 
-export function GoogleMapComponent({ userLocation }: GoogleMapComponentProps) {
+interface GoogleMapComponentProps {
+  userLocation?: { lat: number, lng: number } | null;
+  pois?: Poi[];
+}
+
+export function GoogleMapComponent({ userLocation, pois = [] }: GoogleMapComponentProps) {
   const { isLoaded, loadError } = useJsApiLoader({
     id: 'google-map-script',
     googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || "",
   });
 
+  const [selectedPoi, setSelectedPoi] = useState<Poi | null>(null);
+
   const mapCenter = userLocation || defaultCenter;
+  const zoomLevel = userLocation ? 14 : (pois.length > 0 ? 8 : 10);
 
   if (loadError) {
     return (
@@ -48,9 +59,28 @@ export function GoogleMapComponent({ userLocation }: GoogleMapComponentProps) {
     <GoogleMap
       mapContainerStyle={containerStyle}
       center={mapCenter}
-      zoom={userLocation ? 14 : 10}
+      zoom={zoomLevel}
     >
       {userLocation && <Marker position={userLocation} />}
+      {pois.map((poi) => (
+          <Marker 
+            key={poi.name} 
+            position={{ lat: poi.lat, lng: poi.lng }} 
+            onClick={() => setSelectedPoi(poi)}
+          />
+      ))}
+
+      {selectedPoi && (
+          <InfoWindow
+            position={{ lat: selectedPoi.lat, lng: selectedPoi.lng }}
+            onCloseClick={() => setSelectedPoi(null)}
+          >
+            <div>
+              <h3 className="font-bold font-headline text-lg text-primary">{selectedPoi.name}</h3>
+              <p className="text-sm text-muted-foreground mt-1">{selectedPoi.description}</p>
+            </div>
+          </InfoWindow>
+      )}
     </GoogleMap>
   ) : (
     <Skeleton className="w-full h-full" />

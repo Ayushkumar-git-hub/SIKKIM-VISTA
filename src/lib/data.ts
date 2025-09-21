@@ -270,12 +270,12 @@ export const localCrafts = [
 ];
 
 export const mapPois = [
-  { id: 'poi1', name: 'Rumtek Monastery', top: '25%', left: '55%', description: 'One of the largest and most significant monasteries in Sikkim.' },
-  { id: 'poi2', name: 'Tsomgo Lake', top: '15%', left: '75%', description: 'A glacial lake in East Sikkim, known for its changing colors.' },
-  { id: 'poi3', name: 'Gangtok', top: '35%', left: '65%', description: 'The capital city, offering a blend of tradition and modernity.' },
-  { id: 'poi4', name: 'Pelling', top: '60%', left: '20%', description: 'A town famous for its breathtaking views of Khangchendzonga.' },
-  { id: 'poi5', name: 'Yumthang Valley', top: '8%', left: '40%', description: 'The "Valley of Flowers", a stunning alpine meadow.' },
-  { id: 'poi6', name: 'Gurudongmar Lake', top: '5%', left: '60%', description: 'One of the highest lakes in the world, considered sacred.' },
+  { id: 'poi1', name: 'Rumtek Monastery', top: '27.2747', left: '88.5638', description: 'One of the largest and most significant monasteries in Sikkim.' },
+  { id: 'poi2', name: 'Tsomgo Lake', top: '27.3747', left: '88.7621', description: 'A glacial lake in East Sikkim, known for its changing colors.' },
+  { id: 'poi3', name: 'Gangtok', top: '27.3389', left: '88.6065', description: 'The capital city, offering a blend of tradition and modernity.' },
+  { id: 'poi4', name: 'Pelling', top: '27.3167', left: '88.2333', description: 'A town famous for its breathtaking views of Khangchendzonga.' },
+  { id: 'poi5', name: 'Yumthang Valley', top: '27.8333', left: '88.6833', description: 'The "Valley of Flowers", a stunning alpine meadow.' },
+  { id: 'poi6', name: 'Gurudongmar Lake', top: '28.0257', left: '88.7097', description: 'One of the highest lakes in the world, considered sacred.' },
 ];
 
 export const eventTickets = [
