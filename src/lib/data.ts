@@ -1,4 +1,5 @@
 
+
 export type Language = 'en' | 'ne' | 'hi' | 'es' | 'fr' | 'de' | 'zh' | 'ja' | 'ru' | 'pt' | 'bn' | 'bo' | 'dz';
 
 export const regionalEvents = [
@@ -48,6 +49,7 @@ export const userDocuments = [
     status: "Approved",
     issuedDate: "2024-05-15",
     expiryDate: "2024-06-15",
+    type: "RAP"
   },
   {
     id: "doc2",
@@ -55,6 +57,7 @@ export const userDocuments = [
     status: "Approved",
     issuedDate: "2024-05-18",
     expiryDate: "2024-05-20",
+    type: "PAP"
   },
   {
     id: "doc3",
@@ -62,6 +65,7 @@ export const userDocuments = [
     status: "Active",
     issuedDate: "2024-05-19",
     expiryDate: "2024-05-19",
+    type: "Entry Ticket"
   },
   {
     id: "doc4",
@@ -69,6 +73,7 @@ export const userDocuments = [
     status: "Confirmed",
     issuedDate: "2024-05-12",
     expiryDate: "2024-05-22",
+    type: "Booking"
   },
   {
     id: "doc5",
@@ -76,6 +81,7 @@ export const userDocuments = [
     status: "Pending",
     issuedDate: "2024-05-20",
     expiryDate: "N/A",
+    type: "PAP"
   },
 ];
 
@@ -442,4 +448,31 @@ export const transportBookings = [
   }
 ];
 
+export const restrictedZones = [
+  {
+    id: 'zone-north-sikkim',
+    name: 'North Sikkim',
+    requiredPermit: 'PAP',
+    lat: 27.8333,
+    lng: 88.6833,
+    warningRadiusKm: 20
+  },
+  {
+    id: 'zone-tsomgo',
+    name: 'Tsomgo Lake & Baba Mandir',
+    requiredPermit: 'PAP',
+    lat: 27.3747,
+    lng: 88.7621,
+    warningRadiusKm: 15
+  },
+  {
+    id: 'zone-nathula',
+    name: 'Nathula Pass',
+    requiredPermit: 'PAP',
+    lat: 27.3867,
+    lng: 88.8284,
+    warningRadiusKm: 10
+  }
+];
     
+

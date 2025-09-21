@@ -22,7 +22,6 @@ import {
 import Link from "next/link";
 import { useToast } from "@/hooks/use-toast";
 import Image from "next/image";
-import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const features = [
   {
@@ -106,7 +105,6 @@ const features = [
 
 export default function Home() {
   const { toast } = useToast();
-  const heroImage = PlaceHolderImages.find(img => img.id === 'hero-background');
 
   useEffect(() => {
     const hasVisitedBefore = localStorage.getItem('hasVisitedSikkimExplorer');
@@ -126,19 +124,17 @@ export default function Home() {
     <AppLayout>
       <main className="flex-1">
         <section className="relative h-[400px] md:h-[500px] flex items-center justify-center text-center text-white">
-            {heroImage && (
               <Image 
-                src={heroImage.imageUrl} 
+                src="https://picsum.photos/seed/hero-bg/1920/1080"
                 alt="Beautiful Sikkim mountains" 
                 fill 
                 className="object-cover"
-                data-ai-hint={heroImage.imageHint} 
+                data-ai-hint="mountain valley"
                 priority
               />
-            )}
             <div className="absolute inset-0 bg-black/50" />
             <div className="relative z-10 p-4">
-              <h1 className="font-headline text-4xl md:text-6xl font-bold tracking-tight">
+              <h1 className="font-headline text-4xl md:text-6xl font-bold tracking-tight text-black">
                 Welcome to Sikkim Explorer
               </h1>
               <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto">
