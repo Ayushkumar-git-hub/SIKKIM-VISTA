@@ -59,7 +59,7 @@ export default function TicketBookingPage() {
                       <CardDescription className="mt-1 text-sm">{ticket.date}</CardDescription>
                     </CardContent>
                     <CardFooter className="p-4 flex justify-between items-center">
-                      <p className="text-xl font-bold text-primary">${ticket.price}</p>
+                      <p className="text-xl font-bold text-primary">₹{ticket.price}</p>
                       <Button onClick={() => handleBooking(ticket.name)}>
                         <Ticket className="mr-2 h-4 w-4" /> Book Now
                       </Button>
@@ -93,7 +93,7 @@ export default function TicketBookingPage() {
                       <CardDescription className="mt-1 text-sm">{ticket.type}</CardDescription>
                     </CardContent>
                     <CardFooter className="p-4 flex justify-between items-center">
-                      <p className="text-xl font-bold text-primary">${ticket.price}</p>
+                      <p className="text-xl font-bold text-primary">₹{ticket.price}</p>
                       <Button onClick={() => handleBooking(ticket.name)}>
                          <Ticket className="mr-2 h-4 w-4" /> Book Now
                       </Button>
