@@ -59,37 +59,37 @@
       "id": "craft-1",
       "description": "A woven hat made of natural fibers.",
       "imageUrl": "https://picsum.photos/seed/craft1/400/400",
-      "imageHint": "woven hat"
+      "imageHint": "Lepcha hat"
     },
     {
       "id": "craft-2",
       "description": "A colorful and detailed religious painting.",
       "imageUrl": "https://picsum.photos/seed/craft2/400/400",
-      "imageHint": "religious painting"
+      "imageHint": "Thangka painting"
     },
     {
       "id": "craft-3",
       "description": "A small, intricately carved wooden table.",
       "imageUrl": "https://picsum.photos/seed/craft3/400/400",
-      "imageHint": "carved table"
+      "imageHint": "Choktse table"
     },
     {
       "id": "craft-4",
       "description": "A metallic cylinder with embossed script.",
       "imageUrl": "https://picsum.photos/seed/craft4/400/400",
-      "imageHint": "prayer wheel"
+      "imageHint": "handheld prayer"
     },
     {
       "id": "craft-5",
       "description": "A thick, colorful carpet with symbolic patterns.",
       "imageUrl": "https://picsum.photos/seed/craft5/400/400",
-      "imageHint": "wool carpet"
+      "imageHint": "Sikkimese carpet"
     },
     {
       "id": "craft-6",
       "description": "A brass bowl with a wooden mallet.",
       "imageUrl": "https://picsum.photos/seed/craft6/400/400",
-      "imageHint": "singing bowl"
+      "imageHint": "meditation bowl"
     },
     {
       "id": "map-background",
