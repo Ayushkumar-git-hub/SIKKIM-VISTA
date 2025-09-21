@@ -6,43 +6,63 @@ import { PageHeader } from "@/components/page-header";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { narrativeWalkthroughs, Language } from "@/lib/data";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ChevronDown } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+
 
 const languages: { code: Language; name: string }[] = [
     { code: 'en', name: 'English' },
     { code: 'ne', name: 'नेपाली' },
     { code: 'hi', name: 'हिंदी' },
+    { code: 'es', name: 'Español' },
+    { code: 'fr', name: 'Français' },
+    { code: 'de', name: 'Deutsch' },
+    { code: 'zh', name: '中文' },
+    { code: 'ja', name: '日本語' },
+    { code: 'ru', name: 'Русский' },
+    { code: 'pt', name: 'Português' },
+    { code: 'bn', name: 'বাংলা' },
+    { code: 'bo', name: 'བོད་སྐད' },
+    { code: 'dz', name: 'རྫོང་ཁ' },
 ];
 
 export default function NarrativeWalkthroughsPage() {
   const [selectedLanguage, setSelectedLanguage] = useState<Language>('en');
   const getImage = (id: string) => PlaceHolderImages.find(img => img.id === id);
+  const selectedLanguageName = languages.find(l => l.code === selectedLanguage)?.name || 'English';
 
   return (
     <AppLayout>
       <main className="flex-1 p-4 md:p-8">
-        <div className="flex justify-between items-start">
+        <div className="flex justify-between items-start mb-8">
             <PageHeader
               title="Narrative Walkthroughs"
               description="Journey through time with captivating stories of Sikkim's endangered heritage, folklore, and traditions."
             />
-            <div className="flex items-center gap-2 mb-8 p-1 bg-muted rounded-lg">
-                {languages.map(lang => (
-                    <Button
-                        key={lang.code}
-                        variant={selectedLanguage === lang.code ? 'default' : 'ghost'}
-                        size="sm"
-                        onClick={() => setSelectedLanguage(lang.code)}
-                        className={cn("transition-colors duration-200", selectedLanguage === lang.code && "shadow-sm")}
-                    >
-                        {lang.name}
+             <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                    <Button variant="outline" className="ml-auto">
+                    {selectedLanguageName}
+                    <ChevronDown className="ml-2 h-4 w-4" />
                     </Button>
-                ))}
-            </div>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="end" className="max-h-80 overflow-y-auto">
+                    {languages.map(lang => (
+                        <DropdownMenuItem key={lang.code} onSelect={() => setSelectedLanguage(lang.code)}>
+                            {lang.name}
+                        </DropdownMenuItem>
+                    ))}
+                </DropdownMenuContent>
+            </DropdownMenu>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
