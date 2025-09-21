@@ -35,6 +35,8 @@ import {
 } from 'lucide-react';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 import { Separator } from '../ui/separator';
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '../ui/sheet';
+import { AiChat } from '../ai-chat';
 
 const navItems = [
   { href: '/', label: 'Dashboard', icon: Home },
@@ -110,6 +112,25 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
             {/* Can add search or other header items here */}
         </header>
         {children}
+        <Sheet>
+          <SheetTrigger asChild>
+            <Button className="fixed bottom-6 right-6 h-16 w-16 rounded-full shadow-lg z-40" size="icon">
+              <Bot className="h-8 w-8" />
+              <span className="sr-only">Open Yatra Yeti</span>
+            </Button>
+          </SheetTrigger>
+          <SheetContent side="bottom" className="h-[85vh] flex flex-col p-0">
+             <SheetHeader className="p-4 border-b">
+                <SheetTitle className="flex items-center gap-2">
+                    <Bot className="h-6 w-6 text-primary" />
+                    Yatra Yeti
+                </SheetTitle>
+            </SheetHeader>
+            <div className="flex-1 overflow-y-auto">
+              <AiChat />
+            </div>
+          </SheetContent>
+        </Sheet>
       </SidebarInset>
     </SidebarProvider>
   );
