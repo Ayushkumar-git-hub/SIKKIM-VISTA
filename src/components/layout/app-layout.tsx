@@ -43,7 +43,6 @@ const navItems = [
   { href: '/immersive-views', label: 'Immersive Views', icon: Camera },
   { href: '/document-hub', label: 'Document Hub', icon: FileText },
   { href: '/smart-maps', label: 'Smart Maps', icon: Map },
-  { href: '/ai-assistant', label: 'Yatra Yeti', icon: Bot },
   { href: '/regional-calendar', label: 'Regional Calendar', icon: CalendarIcon },
   { href: '/narrative-walkthroughs', label: 'Narratives', icon: BookOpen },
   { href: '/local-crafts', label: 'Local Crafts', icon: ShoppingBag },
