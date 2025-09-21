@@ -228,42 +228,42 @@ export const localCrafts = [
   {
     id: 'craft1',
     name: 'Hand-woven Lepcha Hat',
-    price: '250.00',
+    price: '350.00',
     description: 'A traditional hat made from cane and bamboo, unique to the Lepcha community.',
     imageId: 'craft-1'
   },
   {
     id: 'craft2',
     name: 'Thangka Scroll Painting',
-    price: '450.00',
+    price: '850.00',
     description: 'A detailed Buddhist painting on cotton, depicting a deity or mandala.',
     imageId: 'craft-2'
   },
   {
     id: 'craft3',
     name: 'Choktse Table',
-    price: '495.00',
+    price: '950.00',
     description: 'A small, ornately carved wooden table, foldable and portable.',
     imageId: 'craft-3'
   },
   {
     id: 'craft4',
     name: 'Prayer Wheel (Handheld)',
-    price: '400.00',
+    price: '600.00',
     description: 'A beautifully crafted prayer wheel containing mantras, for personal devotion.',
     imageId: 'craft-4'
   },
   {
     id: 'craft5',
     name: 'Sikkimese Carpet',
-    price: '300.00',
+    price: '750.00',
     description: 'A hand-knotted wool carpet featuring traditional dragon and floral motifs.',
     imageId: 'craft-5'
   },
   {
     id: 'craft6',
     name: 'Singing Bowl Set',
-    price: '375.00',
+    price: '550.00',
     description: 'A set of hand-hammered metal bowls that produce serene, meditative sounds.',
     imageId: 'craft-6'
   },
@@ -282,28 +282,28 @@ export const eventTickets = [
   {
     id: 'ticket-event-1',
     name: 'Losar Festival Experience',
-    price: '250.00',
+    price: '450.00',
     date: 'Feb 10-12, 2025',
     imageId: 'ticket-event-1'
   },
   {
     id: 'ticket-event-2',
     name: 'Saga Dawa Full Moon Observation',
-    price: '150.00',
+    price: '300.00',
     date: 'May 23, 2025',
     imageId: 'ticket-event-2'
   },
   {
     id: 'ticket-event-3',
     name: 'Pang Lhabsol Warrior Dance',
-    price: '225.00',
+    price: '425.00',
     date: 'Aug 20, 2025',
     imageId: 'ticket-event-3'
   },
   {
     id: 'ticket-event-4',
     name: 'Losoong Archery Competition',
-    price: '100.00',
+    price: '350.00',
     date: 'Dec 28, 2025',
     imageId: 'ticket-event-4'
   }
@@ -313,30 +313,31 @@ export const placeTickets = [
   {
     id: 'ticket-place-1',
     name: 'Rumtek Monastery Entry',
-    price: '100.00',
+    price: '300.00',
     type: 'Monastery',
     imageId: 'ticket-place-1'
   },
   {
     id: 'ticket-place-2',
     name: 'Tsomgo Lake Permit',
-    price: '150.00',
+    price: '500.00',
     type: 'Natural Attraction',
     imageId: 'ticket-place-2'
   },
   {
     id: 'ticket-place-3',
     name: 'Yumthang Valley Access',
-    price: '250.00',
+    price: '750.00',
     type: 'Natural Attraction',
     imageId: 'ticket-place-3'
   },
   {
     id: 'ticket-place-4',
     name: 'Khangchendzonga National Park',
-    price: '350.00',
+    price: '950.00',
     type: 'National Park',
     imageId: 'ticket-place-4'
   }
 ];
+
 
