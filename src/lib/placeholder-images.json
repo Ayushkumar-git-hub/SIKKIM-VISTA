@@ -94,8 +94,56 @@
     {
       "id": "map-background",
       "description": "A satellite-style map of a mountainous region.",
-      "imageUrl": "https://picsum.photos/seed/realsatellite/1600/1200",
+      "imageUrl": "https://picsum.photos/seed/sikkimmap4/1600/1200",
       "imageHint": "satellite map"
+    },
+    {
+      "id": "ticket-event-1",
+      "description": "People celebrating a colorful festival.",
+      "imageUrl": "https://picsum.photos/seed/ticket_event1/800/600",
+      "imageHint": "festival celebration"
+    },
+    {
+      "id": "ticket-event-2",
+      "description": "A crowd gathered under a full moon near a stupa.",
+      "imageUrl": "https://picsum.photos/seed/ticket_event2/800/600",
+      "imageHint": "stupa moon"
+    },
+    {
+      "id": "ticket-event-3",
+      "description": "Masked dancers performing a traditional warrior dance.",
+      "imageUrl": "https://picsum.photos/seed/ticket_event3/800/600",
+      "imageHint": "masked dancers"
+    },
+    {
+      "id": "ticket-event-4",
+      "description": "An archery competition in a field.",
+      "imageUrl": "https://picsum.photos/seed/ticket_event4/800/600",
+      "imageHint": "archery competition"
+    },
+    {
+      "id": "ticket-place-1",
+      "description": "A grand, colorful monastery entrance.",
+      "imageUrl": "https://picsum.photos/seed/ticket_place1/800/600",
+      "imageHint": "monastery entrance"
+    },
+    {
+      "id": "ticket-place-2",
+      "description": "A beautiful high-altitude glacial lake.",
+      "imageUrl": "https://picsum.photos/seed/ticket_place2/800/600",
+      "imageHint": "glacial lake"
+    },
+    {
+      "id": "ticket-place-3",
+      "description": "A valley filled with blooming flowers.",
+      "imageUrl": "https://picsum.photos/seed/ticket_place3/800/600",
+      "imageHint": "flower valley"
+    },
+    {
+      "id": "ticket-place-4",
+      "description": "A view of a snow-covered mountain range.",
+      "imageUrl": "https://picsum.photos/seed/ticket_place4/800/600",
+      "imageHint": "mountain range"
     }
   ]
 }

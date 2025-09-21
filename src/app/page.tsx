@@ -8,7 +8,9 @@ import {
   Calendar, 
   BookOpen, 
   ShoppingBag,
-  ArrowRight
+  ArrowRight,
+  ScanLine,
+  Ticket
 } from "lucide-react";
 import Link from "next/link";
 
@@ -61,6 +63,20 @@ const features = [
     icon: ShoppingBag,
     href: "/local-crafts",
     color: "text-teal-500",
+  },
+  {
+    title: "Land Recognition",
+    description: "Identify landscapes from your photos.",
+    icon: ScanLine,
+    href: "/land-recognition",
+    color: "text-indigo-500",
+  },
+  {
+    title: "Ticket Booking",
+    description: "Book tickets for events and tourist places.",
+    icon: Ticket,
+    href: "/ticket-booking",
+    color: "text-pink-500",
   },
 ];
 

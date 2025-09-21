@@ -277,3 +277,65 @@ export const mapPois = [
   { id: 'poi5', name: 'Yumthang Valley', top: '8%', left: '40%', description: 'The "Valley of Flowers", a stunning alpine meadow.' },
   { id: 'poi6', name: 'Gurudongmar Lake', top: '5%', left: '60%', description: 'One of the highest lakes in the world, considered sacred.' },
 ];
+
+export const eventTickets = [
+  {
+    id: 'ticket-event-1',
+    name: 'Losar Festival Experience',
+    price: '50.00',
+    date: 'Feb 10-12, 2025',
+    imageId: 'ticket-event-1'
+  },
+  {
+    id: 'ticket-event-2',
+    name: 'Saga Dawa Full Moon Observation',
+    price: '30.00',
+    date: 'May 23, 2025',
+    imageId: 'ticket-event-2'
+  },
+  {
+    id: 'ticket-event-3',
+    name: 'Pang Lhabsol Warrior Dance',
+    price: '45.00',
+    date: 'Aug 20, 2025',
+    imageId: 'ticket-event-3'
+  },
+  {
+    id: 'ticket-event-4',
+    name: 'Losoong Archery Competition',
+    price: '20.00',
+    date: 'Dec 28, 2025',
+    imageId: 'ticket-event-4'
+  }
+];
+
+export const placeTickets = [
+  {
+    id: 'ticket-place-1',
+    name: 'Rumtek Monastery Entry',
+    price: '10.00',
+    type: 'Monastery',
+    imageId: 'ticket-place-1'
+  },
+  {
+    id: 'ticket-place-2',
+    name: 'Tsomgo Lake Permit',
+    price: '15.00',
+    type: 'Natural Attraction',
+    imageId: 'ticket-place-2'
+  },
+  {
+    id: 'ticket-place-3',
+    name: 'Yumthang Valley Access',
+    price: '25.00',
+    type: 'Natural Attraction',
+    imageId: 'ticket-place-3'
+  },
+  {
+    id: 'ticket-place-4',
+    name: 'Khangchendzonga National Park',
+    price: '35.00',
+    type: 'National Park',
+    imageId: 'ticket-place-4'
+  }
+];
