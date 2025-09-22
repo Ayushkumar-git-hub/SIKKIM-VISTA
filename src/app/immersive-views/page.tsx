@@ -1,14 +1,9 @@
 
 import AppLayout from "@/components/layout/app-layout";
 import { PageHeader } from "@/components/page-header";
-import Image from "next/image";
-import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Card, CardContent } from "@/components/ui/card";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import { Badge } from "@/components/ui/badge";
 
 export default function ImmersiveViewsPage() {
-  const immersiveImages = PlaceHolderImages.filter(img => img.id.startsWith('immersive-'));
 
   return (
     <AppLayout>
@@ -18,39 +13,8 @@ export default function ImmersiveViewsPage() {
           description="Step into the breathtaking landscapes of Sikkim. A virtual journey to its most serene and majestic spots."
         />
         <Card>
-          <CardContent className="p-6">
-            <Carousel
-              opts={{
-                align: "start",
-                loop: true,
-              }}
-              className="w-full"
-            >
-              <CarouselContent>
-                {immersiveImages.map((image) => (
-                  <CarouselItem key={image.id}>
-                    <div className="relative aspect-video w-full">
-                       <Image
-                        src={image.imageUrl}
-                        alt={image.description}
-                        fill
-                        className="rounded-lg object-cover"
-                        data-ai-hint={image.imageHint}
-                      />
-                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-lg" />
-                       <div className="absolute top-4 right-4">
-                         <Badge variant="secondary" className="text-sm backdrop-blur-sm">360° View</Badge>
-                       </div>
-                       <div className="absolute bottom-0 left-0 p-6">
-                         <h3 className="text-2xl font-bold text-white font-headline">{image.description}</h3>
-                       </div>
-                    </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              <CarouselPrevious className="ml-16" />
-              <CarouselNext className="mr-16" />
-            </Carousel>
+          <CardContent className="p-6 flex items-center justify-center h-96">
+            <p className="text-muted-foreground">Immersive view content will be available here.</p>
           </CardContent>
         </Card>
       </main>
