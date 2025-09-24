@@ -61,6 +61,30 @@ export const userDocuments = [
   },
   {
     id: "doc3",
+    name: "Indian Passport",
+    status: "Verified",
+    issuedDate: "2020-08-25",
+    expiryDate: "2030-08-24",
+    type: "ID"
+  },
+   {
+    id: "doc4",
+    name: "Driving License",
+    status: "Verified",
+    issuedDate: "2022-03-10",
+    expiryDate: "2042-03-09",
+    type: "ID"
+  },
+   {
+    id: "doc5",
+    name: "Aadhar Card",
+    status: "Verified",
+    issuedDate: "2015-01-01",
+    expiryDate: "Lifetime",
+    type: "ID"
+  },
+  {
+    id: "doc6",
     name: "Rumtek Monastery Entry Ticket",
     status: "Active",
     issuedDate: "2024-05-19",
@@ -68,7 +92,7 @@ export const userDocuments = [
     type: "Entry Ticket"
   },
   {
-    id: "doc4",
+    id: "doc7",
     name: "Guide Booking Confirmation - Pelling",
     status: "Confirmed",
     issuedDate: "2024-05-12",
@@ -76,7 +100,7 @@ export const userDocuments = [
     type: "Booking"
   },
   {
-    id: "doc5",
+    id: "doc8",
     name: "Protected Area Permit (PAP) - North Sikkim",
     status: "Pending",
     issuedDate: "2024-05-20",
@@ -476,3 +500,4 @@ export const restrictedZones = [
 ];
     
 
+  
