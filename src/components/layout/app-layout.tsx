@@ -132,7 +132,14 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
           <SheetContent side="bottom" className="h-[85vh] flex flex-col p-0">
              <SheetHeader className="p-4 border-b">
                 <SheetTitle className="flex items-center gap-2">
-                    <Bot className="h-6 w-6 text-primary" />
+                    {yetiAvatar ? (
+                       <Avatar className="w-8 h-8">
+                         <AvatarImage src={yetiAvatar.imageUrl} alt="Yatra Yeti" />
+                         <AvatarFallback><Bot /></AvatarFallback>
+                       </Avatar>
+                    ) : (
+                       <Bot className="h-6 w-6 text-primary" />
+                    )}
                     Yatra Yeti
                 </SheetTitle>
             </SheetHeader>

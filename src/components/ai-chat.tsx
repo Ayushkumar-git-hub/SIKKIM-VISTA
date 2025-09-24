@@ -70,7 +70,7 @@ export function AiChat() {
   const YetiAvatar = () => (
     <Avatar className="w-10 h-10 border">
         {yetiAvatar ? (
-            <AvatarImage src={yetiAvatar.imageUrl} alt="Yatra Yeti" />
+            <AvatarImage src={yetiAvatar.imageUrl} alt="Yatra Yeti" className="object-cover" />
         ) : (
             <AvatarFallback><Bot /></AvatarFallback>
         )}

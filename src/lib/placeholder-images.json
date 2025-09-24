@@ -153,8 +153,8 @@
     {
       "id": "yeti-avatar",
       "description": "Avatar of Yatra Yeti, the AI assistant.",
-      "imageUrl": "https://images.unsplash.com/photo-1646874964082-24f3a0a25099?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx5ZXRpJTIwbW9uc3RlcnxlbnwwfHx8fDE3NTg3MzExOTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "yeti monster"
+      "imageUrl": "https://images.unsplash.com/photo-1551632811-561732d1e306?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtb3VudGFpbiUyMHBlYWt8ZW58MHx8fHwxNzU4NjMwMDIwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mountain peak"
     },
     {
       "id": "booking-hotel-1",
