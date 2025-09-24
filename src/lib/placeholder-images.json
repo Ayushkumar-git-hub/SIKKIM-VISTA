@@ -1,226 +1,231 @@
-
 {
   "placeholderImages": [
     {
+      "id": "hero-bg",
+      "description": "Panoramic view of a mountain valley in Sikkim.",
+      "imageUrl": "https://images.unsplash.com/photo-1621114410742-f886ab91e6f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtb3VudGFpbiUyMHZhbGxleXxlbnwwfHx8fDE3NTg3MTQ2NjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mountain valley"
+    },
+    {
       "id": "immersive-1",
       "description": "360° view of Rumtek Monastery courtyard",
-      "imageUrl": "https://picsum.photos/seed/immersive1/1200/800",
+      "imageUrl": "https://images.unsplash.com/photo-1707521851701-2569efc103e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb25hc3RlcnklMjBjb3VydHlhcmR8ZW58MHx8fHwxNzU4NjgzMjExfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "monastery courtyard"
     },
     {
       "id": "immersive-2",
       "description": "360° view from Pemayangtse Monastery",
-      "imageUrl": "https://picsum.photos/seed/immersive2/1200/800",
+      "imageUrl": "https://images.unsplash.com/photo-1681118143208-51c6ad98eff6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb25hc3RlcnklMjBtb3VudGFpbnN8ZW58MHx8fHwxNzU4NjkwMjI2fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "monastery mountains"
     },
     {
       "id": "immersive-3",
       "description": "A serene lake surrounded by snow-capped peaks.",
-      "imageUrl": "https://picsum.photos/seed/immersive3/1200/800",
+      "imageUrl": "https://images.unsplash.com/photo-1597137112768-fc373ac15f32?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bGFrZSUyMG1vdW50YWluc3xlbnwwfHx8fDE3NTg3MDY0NjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "lake mountains"
     },
     {
       "id": "immersive-4",
       "description": "Lush green valley with a river flowing through it.",
-      "imageUrl": "https://picsum.photos/seed/immersive4/1200/800",
+      "imageUrl": "https://images.unsplash.com/photo-1628703724622-b5cc4f753793?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx2YWxsZXklMjByaXZlcnxlbnwwfHx8fDE3NTg3MzExOTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "valley river"
     },
     {
       "id": "immersive-5",
       "description": "Suspension bridge decorated with prayer flags.",
-      "imageUrl": "https://picsum.photos/seed/immersive5/1200/800",
+      "imageUrl": "https://images.unsplash.com/photo-1610951985927-26ef90da643f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxicmlkZ2UlMjBmbGFnc3xlbnwwfHx8fDE3NTg3MzExOTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "bridge flags"
     },
     {
       "id": "narrative-1",
       "description": "A statue of a revered spiritual figure.",
-      "imageUrl": "https://picsum.photos/seed/narrative1/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1549386244-7613434211e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzdGF0dWUlMjBzcGlyaXR1YWx8ZW58MHx8fHwxNzU4NzMxMTkzfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "statue spiritual"
     },
     {
       "id": "narrative-2",
       "description": "A group of people in traditional attire.",
-      "imageUrl": "https://picsum.photos/seed/narrative2/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1619808369435-7cfa4ff66ec0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwZW9wbGUlMjB0cmFkaXRpb25hbHxlbnwwfHx8fDE3NTg3MzExOTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "people traditional"
     },
     {
       "id": "narrative-3",
       "description": "An old palace or fort on a hilltop.",
-      "imageUrl": "https://picsum.photos/seed/narrative3/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1722577359782-265eb6282c26?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwYWxhY2UlMjBmb3J0fGVufDB8fHx8MTc1ODczMTE5M3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "palace fort"
     },
     {
       "id": "narrative-4",
       "description": "An artist painting a detailed religious scroll.",
-      "imageUrl": "https://picsum.photos/seed/narrative4/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxhcnRpc3QlMjBwYWludGluZ3xlbnwwfHx8fDE3NTg3MDQyNjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "artist painting"
     },
     {
       "id": "craft-1",
       "description": "A woven hat made of natural fibers.",
-      "imageUrl": "https://picsum.photos/seed/craft1/400/400",
+      "imageUrl": "https://images.unsplash.com/photo-1745284504844-7979176dc29b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8TGVwY2hhJTIwaGF0fGVufDB8fHx8MTc1ODczMTE5M3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "Lepcha hat"
     },
     {
       "id": "craft-2",
       "description": "A colorful and detailed religious painting.",
-      "imageUrl": "https://picsum.photos/seed/craft2/400/400",
+      "imageUrl": "https://images.unsplash.com/photo-1674133749176-d2aa8860798b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxUaGFuZ2thJTIwcGFpbnRpbmd8ZW58MHx8fHwxNzU4NzMxMTkzfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "Thangka painting"
     },
     {
       "id": "craft-3",
       "description": "A small, intricately carved wooden table.",
-      "imageUrl": "https://picsum.photos/seed/craft3/400/400",
+      "imageUrl": "https://images.unsplash.com/photo-1652305459885-b7ae40f0d776?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxDaG9rdHNlJTIwdGFibGV8ZW58MHx8fHwxNzU4NzMxMTkzfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "Choktse table"
     },
     {
       "id": "craft-4",
       "description": "A metallic cylinder with embossed script.",
-      "imageUrl": "https://picsum.photos/seed/craft4/400/400",
+      "imageUrl": "https://images.unsplash.com/photo-1575516662637-99214ea59f23?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxoYW5kaGVsZCUyMHByYXllcnxlbnwwfHx8fDE3NTg3MzExOTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "handheld prayer"
     },
     {
       "id": "craft-5",
       "description": "A thick, colorful carpet with symbolic patterns.",
-      "imageUrl": "https://picsum.photos/seed/craft5/400/400",
+      "imageUrl": "https://images.unsplash.com/photo-1755546368098-17f61885a154?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxTaWtraW1lc2UlMjBjYXJwZXR8ZW58MHx8fHwxNzU4NzMxMTkzfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "Sikkimese carpet"
     },
     {
       "id": "craft-6",
       "description": "A brass bowl with a wooden mallet.",
-      "imageUrl": "https://picsum.photos/seed/craft6/400/400",
+      "imageUrl": "https://images.unsplash.com/photo-1633015690832-c763610cce38?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bWVkaXRhdGlvbiUyMGJvd2x8ZW58MHx8fHwxNzU4NzMxMTkzfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "meditation bowl"
     },
     {
       "id": "map-background",
       "description": "A satellite-style map of a mountainous region.",
-      "imageUrl": "https://picsum.photos/seed/sikkim-satellite/1600/1200",
+      "imageUrl": "https://images.unsplash.com/photo-1736258329532-be8e1684f2e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzYXRlbGxpdGUlMjBtYXB8ZW58MHx8fHwxNzU4NjMxNjU2fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "satellite map"
     },
     {
       "id": "ticket-event-1",
       "description": "People celebrating a colorful festival.",
-      "imageUrl": "https://picsum.photos/seed/ticket_event1/800/600",
+      "imageUrl": "https://images.unsplash.com/photo-1712772639440-e951bc178e66?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxUaWJldGFuJTIwTmV3WWVhcnxlbnwwfHx8fDE3NTg3MzExOTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "Tibetan NewYear"
     },
     {
       "id": "ticket-event-2",
       "description": "A crowd gathered under a full moon near a stupa.",
-      "imageUrl": "https://picsum.photos/seed/ticket_event2/800/600",
+      "imageUrl": "https://images.unsplash.com/photo-1587091999387-b548c3316f62?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxCdWRkaGlzdCUyMGZlc3RpdmFsfGVufDB8fHx8MTc1ODczMTE5M3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "Buddhist festival"
     },
     {
       "id": "ticket-event-3",
       "description": "Masked dancers performing a traditional warrior dance.",
-      "imageUrl": "https://picsum.photos/seed/ticket_event3/800/600",
+      "imageUrl": "https://images.unsplash.com/photo-1725264171941-548b14da1d0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx3YXJyaW9yJTIwZGFuY2V8ZW58MHx8fHwxNzU4NzMxMTkzfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "warrior dance"
     },
     {
       "id": "ticket-event-4",
       "description": "An archery competition in a field.",
-      "imageUrl": "https://picsum.photos/seed/ticket_event4/800/600",
+      "imageUrl": "https://images.unsplash.com/photo-1631461698264-3bab5be9a674?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx0cmFkaXRpb25hbCUyMGFyY2hlcnl8ZW58MHx8fHwxNzU4NzMxMTkzfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "traditional archery"
     },
     {
       "id": "ticket-place-1",
       "description": "A grand, colorful monastery entrance.",
-      "imageUrl": "https://picsum.photos/seed/ticket_place1/800/600",
+      "imageUrl": "https://images.unsplash.com/photo-1642355121699-b3fe0f258835?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb25hc3RlcnklMjBlbnRyYW5jZXxlbnwwfHx8fDE3NTg3MTIyMjd8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "monastery entrance"
     },
     {
       "id": "ticket-place-2",
       "description": "A beautiful high-altitude glacial lake.",
-      "imageUrl": "https://picsum.photos/seed/ticket_place2/800/600",
+      "imageUrl": "https://images.unsplash.com/photo-1670139018938-af8bf748a1bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxnbGFjaWFsJTIwbGFrZXxlbnwwfHx8fDE3NTg3MzExOTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "glacial lake"
     },
     {
       "id": "ticket-place-3",
       "description": "A valley filled with blooming flowers.",
-      "imageUrl": "https://picsum.photos/seed/ticket_place3/800/600",
+      "imageUrl": "https://images.unsplash.com/photo-1605309341739-c155bced9699?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxmbG93ZXIlMjB2YWxsZXl8ZW58MHx8fHwxNzU4NjkwMjI2fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "flower valley"
     },
     {
       "id": "ticket-place-4",
       "description": "A view of a snow-covered mountain range.",
-      "imageUrl": "https://picsum.photos/seed/ticket_place4/800/600",
+      "imageUrl": "https://images.unsplash.com/photo-1525784451128-d1488f52f03e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb3VudGFpbiUyMHJhbmdlfGVufDB8fHx8MTc1ODY5ODk4N3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "mountain range"
     },
     {
       "id": "yeti-avatar",
       "description": "Avatar of Yatra Yeti, the AI assistant.",
-      "imageUrl": "https://picsum.photos/seed/yeti-avatar/100/100",
+      "imageUrl": "https://images.unsplash.com/photo-1646874964082-24f3a0a25099?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx5ZXRpJTIwbW9uc3RlcnxlbnwwfHx8fDE3NTg3MzExOTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "yeti monster"
     },
     {
       "id": "booking-hotel-1",
       "description": "A luxury hotel room with a view of mountains.",
-      "imageUrl": "https://picsum.photos/seed/hotel1/800/600",
+      "imageUrl": "https://images.unsplash.com/photo-1629140727571-9b5c6f6267b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxob3RlbCUyMHJvb218ZW58MHx8fHwxNzU4NzIxMjkzfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "hotel room"
     },
     {
       "id": "booking-hotel-2",
       "description": "The exterior of a modern resort at dusk.",
-      "imageUrl": "https://picsum.photos/seed/hotel2/800/600",
+      "imageUrl": "https://images.unsplash.com/photo-1569664370706-e26397378b09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxyZXNvcnQlMjBleHRlcmlvcnxlbnwwfHx8fDE3NTg3MzExOTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "resort exterior"
     },
     {
       "id": "booking-hotel-3",
       "description": "A cozy boutique hotel room.",
-      "imageUrl": "https://picsum.photos/seed/hotel3/800/600",
+      "imageUrl": "https://images.unsplash.com/photo-1593194632872-3d19dab6e278?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxib3V0aXF1ZSUyMGhvdGVsfGVufDB8fHx8MTc1ODY4MTY0MHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "boutique hotel"
     },
     {
       "id": "booking-hotel-4",
       "description": "A hotel lobby with modern decor.",
-      "imageUrl": "https://picsum.photos/seed/hotel4/800/600",
+      "imageUrl": "https://images.unsplash.com/photo-1637730826933-54287f79e1c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxob3RlbCUyMGxvYmJ5fGVufDB8fHx8MTc1ODcwMTU4MHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "hotel lobby"
     },
     {
       "id": "booking-restaurant-1",
       "description": "A plate of steaming momos.",
-      "imageUrl": "https://picsum.photos/seed/resto1/800/600",
+      "imageUrl": "https://images.unsplash.com/photo-1565355857989-333dff0b3dc8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxmb29kJTIwbW9tb3N8ZW58MHx8fHwxNzU4NzMxMTk0fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "food momos"
     },
     {
       "id": "booking-restaurant-2",
       "description": "A traditional Sikkimese thali.",
-      "imageUrl": "https://picsum.photos/seed/resto2/800/600",
+      "imageUrl": "https://images.unsplash.com/photo-1742281258189-3b933879867a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxmb29kJTIwdGhhbGl8ZW58MHx8fHwxNzU4NzMxMTkzfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "food thali"
     },
     {
       "id": "booking-restaurant-3",
       "description": "A stylish coffee shop interior.",
-      "imageUrl": "https://picsum.photos/seed/resto3/800/600",
+      "imageUrl": "https://images.unsplash.com/photo-1542372147193-a7aca54189cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjb2ZmZWUlMjBzaG9wfGVufDB8fHx8MTc1ODY5OTQ1Mnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "coffee shop"
     },
     {
       "id": "booking-restaurant-4",
       "description": "A vibrant bar with live music.",
-      "imageUrl": "https://picsum.photos/seed/resto4/800/600",
+      "imageUrl": "https://images.unsplash.com/photo-1450648757538-632c22bfdb7c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxiYXIlMjBtdXNpY3xlbnwwfHx8fDE3NTg3MzExOTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "bar music"
     },
     {
       "id": "booking-transport-1",
       "description": "A modern car on a mountain road.",
-      "imageUrl": "https://picsum.photos/seed/trans1/800/600",
+      "imageUrl": "https://images.unsplash.com/photo-1505179458090-6beaea6fe314?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjYXIlMjBtb3VudGFpbnxlbnwwfHx8fDE3NTg3MzExOTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "car mountain"
     },
     {
       "id": "booking-transport-2",
       "description": "A shared taxi van.",
-      "imageUrl": "https://picsum.photos/seed/trans2/800/600",
+      "imageUrl": "https://images.unsplash.com/photo-1748215210939-ad8b6c8c086d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx0YXhpJTIwdmFufGVufDB8fHx8MTc1ODczMTE5M3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "taxi van"
     },
     {
       "id": "booking-transport-3",
       "description": "A motorcycle parked with a scenic view.",
-      "imageUrl": "https://picsum.photos/seed/trans3/800/600",
+      "imageUrl": "https://images.unsplash.com/photo-1643454207623-d7c262daeebb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb3RvcmN5Y2xlJTIwc2NlbmljfGVufDB8fHx8MTc1ODYyOTk0NHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "motorcycle scenic"
     },
     {
       "id": "booking-transport-4",
       "description": "An airport terminal exterior.",
-      "imageUrl": "https://picsum.photos/seed/trans4/800/600",
+      "imageUrl": "https://images.unsplash.com/photo-1527007622069-3a0241e1cd8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhaXJwb3J0JTIwdGVybWluYWx8ZW58MHx8fHwxNzU4NzE4ODYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "airport terminal"
     }
   ]

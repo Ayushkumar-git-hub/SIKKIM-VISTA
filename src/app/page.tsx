@@ -3,7 +3,7 @@
 
 import { useEffect } from "react";
 import AppLayout from "@/components/layout/app-layout";
-import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardDescription, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { 
   Camera, 
   FileText, 
@@ -17,11 +17,20 @@ import {
   Ticket,
   LifeBuoy,
   Users,
-  LocateFixed
+  LocateFixed,
+  Sun,
+  Cloud,
+  Cloudy,
+  CloudRain,
+  Thermometer,
+  Wind,
+  Sunrise,
+  Sunset
 } from "lucide-react";
 import Link from "next/link";
 import { useToast } from "@/hooks/use-toast";
 import Image from "next/image";
+import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const features = [
   {
@@ -103,8 +112,48 @@ const features = [
   },
 ];
 
+const weatherData = [
+  {
+    location: "Gangtok",
+    temp: 18,
+    condition: "Partly Cloudy",
+    icon: Cloudy,
+    wind: "10 km/h",
+    sunrise: "5:15 AM",
+    sunset: "6:30 PM",
+  },
+  {
+    location: "Pelling",
+    temp: 15,
+    condition: "Sunny",
+    icon: Sun,
+    wind: "8 km/h",
+    sunrise: "5:20 AM",
+    sunset: "6:40 PM",
+  },
+  {
+    location: "Lachung (N. Sikkim)",
+    temp: 9,
+    condition: "Light Rain",
+    icon: CloudRain,
+    wind: "15 km/h",
+    sunrise: "5:10 AM",
+    sunset: "6:25 PM",
+  },
+];
+
+
+const WeatherIcon = ({ icon: Icon, condition }: { icon: React.ElementType, condition: string }) => {
+  let color = "text-yellow-500";
+  if (condition.includes("Cloud")) color = "text-gray-400";
+  if (condition.includes("Rain")) color = "text-blue-500";
+
+  return <Icon className={`w-16 h-16 ${color}`} />;
+};
+
 export default function Home() {
   const { toast } = useToast();
+  const heroImage = PlaceHolderImages.find(img => img.id === 'hero-bg');
 
   useEffect(() => {
     const hasVisitedBefore = localStorage.getItem('hasVisitedSikkimExplorer');
@@ -124,26 +173,55 @@ export default function Home() {
     <AppLayout>
       <main className="flex-1">
         <section className="relative h-[400px] md:h-[500px] flex items-center justify-center text-center text-white">
+            {heroImage && (
               <Image 
-                src="https://picsum.photos/seed/hero-bg/1920/1080"
+                src={heroImage.imageUrl}
                 alt="Beautiful Sikkim mountains" 
                 fill 
                 className="object-cover"
-                data-ai-hint="mountain valley"
+                data-ai-hint={heroImage.imageHint}
                 priority
               />
+            )}
             <div className="absolute inset-0 bg-black/50" />
             <div className="relative z-10 p-4">
-              <h1 className="font-headline text-4xl md:text-6xl font-bold tracking-tight text-black">
+              <h1 className="font-headline text-4xl md:text-6xl font-bold tracking-tight">
                 Welcome to Sikkim Explorer
               </h1>
               <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto">
                 Your all-in-one companion to discover the breathtaking beauty, vibrant culture, and hidden gems of Sikkim.
               </p>
             </div>
-          </section>
+        </section>
 
-        <div className="p-4 md:p-8">
+        <div className="p-4 md:p-8 space-y-8">
+            <section>
+              <h2 className="font-headline text-3xl font-semibold text-primary mb-4">Weather Forecast</h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {weatherData.map(weather => (
+                  <Card key={weather.location}>
+                    <CardHeader>
+                      <CardTitle>{weather.location}</CardTitle>
+                      <CardDescription>{weather.condition}</CardDescription>
+                    </CardHeader>
+                    <CardContent className="flex flex-col items-center text-center gap-4">
+                      <WeatherIcon icon={weather.icon} condition={weather.condition} />
+                      <div className="text-6xl font-bold">
+                        {weather.temp}°<span className="text-4xl">C</span>
+                      </div>
+                      <div className="w-full grid grid-cols-2 gap-4 text-sm text-muted-foreground">
+                          <div className="flex items-center gap-2"><Wind className="w-4 h-4"/><span>{weather.wind}</span></div>
+                          <div className="flex items-center gap-2"><Sunrise className="w-4 h-4"/><span>{weather.sunrise}</span></div>
+                          <div className="flex items-center gap-2"></div>
+                          <div className="flex items-center gap-2"><Sunset className="w-4 h-4"/><span>{weather.sunset}</span></div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+               <p className="text-xs text-muted-foreground mt-4 text-center">Note: Weather data is for demonstration purposes only.</p>
+            </section>
+            
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {features.map((feature) => (
                 <Link href={feature.href} key={feature.title} className="group">
