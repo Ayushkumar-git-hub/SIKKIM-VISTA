@@ -54,6 +54,7 @@ const navItems = [
   { href: '/ticket-booking', label: 'Bookings', icon: Ticket },
   { href: '/help', label: 'Help & FAQ', icon: LifeBuoy },
   { href: '/about-us', label: 'About Us', icon: Users },
+  { href: '/ai-assistant', label: 'AI Assistant', icon: Bot },
 ];
 
 export default function AppLayout({ children }: { children: React.ReactNode }) {
@@ -118,36 +119,6 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
             {/* Can add search or other header items here */}
         </header>
         {children}
-        <Sheet>
-          <SheetTrigger asChild>
-            <Button className="fixed bottom-6 right-6 h-16 w-16 rounded-full shadow-lg z-40 p-0 overflow-hidden" size="icon">
-              {yetiAvatar ? (
-                <Image src={yetiAvatar.imageUrl} alt="Yatra Yeti" fill className="object-cover" />
-              ) : (
-                <Bot className="h-8 w-8" />
-              )}
-              <span className="sr-only">Open Yatra Yeti</span>
-            </Button>
-          </SheetTrigger>
-          <SheetContent side="bottom" className="h-[85vh] flex flex-col p-0">
-             <SheetHeader className="p-4 border-b">
-                <SheetTitle className="flex items-center gap-2">
-                    {yetiAvatar ? (
-                       <Avatar className="w-8 h-8">
-                         <AvatarImage src={yetiAvatar.imageUrl} alt="Yatra Yeti" />
-                         <AvatarFallback><Bot /></AvatarFallback>
-                       </Avatar>
-                    ) : (
-                       <Bot className="h-6 w-6 text-primary" />
-                    )}
-                    Yatra Yeti
-                </SheetTitle>
-            </SheetHeader>
-            <div className="flex-1 overflow-y-auto">
-              <AiChat />
-            </div>
-          </SheetContent>
-        </Sheet>
       </SidebarInset>
     </SidebarProvider>
   );

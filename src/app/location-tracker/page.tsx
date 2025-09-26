@@ -9,7 +9,6 @@ import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
 import { GoogleMapComponent } from "@/components/google-map";
 import { Card } from "@/components/ui/card";
-import { userDocuments, restrictedZones } from "@/lib/data";
 import {
   AlertDialog,
   AlertDialogAction,
@@ -27,48 +26,11 @@ type UserLocation = {
   lng: number;
 };
 
-// Helper function to calculate distance between two lat/lng points in kilometers
-function getDistance(lat1: number, lon1: number, lat2: number, lon2: number) {
-  const R = 6371; // Radius of the earth in km
-  const dLat = deg2rad(lat2 - lat1);
-  const dLon = deg2rad(lon2 - lon1);
-  const a =
-    Math.sin(dLat / 2) * Math.sin(dLat / 2) +
-    Math.cos(deg2rad(lat1)) * Math.cos(deg2rad(lat2)) *
-    Math.sin(dLon / 2) * Math.sin(dLon / 2);
-  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-  const d = R * c; // Distance in km
-  return d;
-}
-
-function deg2rad(deg: number) {
-  return deg * (Math.PI / 180);
-}
-
 export default function LocationTrackerPage() {
   const { toast } = useToast();
   const [userLocation, setUserLocation] = useState<UserLocation | null>(null);
   const [isTracking, setIsTracking] = useState(false);
   const [warning, setWarning] = useState<{ zoneName: string, requiredPermit: string } | null>(null);
-
-
-  const checkRestrictedArea = (location: UserLocation) => {
-    const userPermits = userDocuments
-        .filter(doc => doc.status === 'Approved' || doc.status === 'Active')
-        .map(doc => doc.type);
-
-    for (const zone of restrictedZones) {
-        const distance = getDistance(location.lat, location.lng, zone.lat, zone.lng);
-        // Check if user is within the warning radius (e.g., 20 km)
-        if (distance < zone.warningRadiusKm) {
-            const hasPermit = userPermits.includes(zone.requiredPermit);
-            if (!hasPermit) {
-                setWarning({ zoneName: zone.name, requiredPermit: zone.requiredPermit });
-                return; // Show first warning and stop
-            }
-        }
-    }
-  };
 
 
   const handleTrackUser = () => {
@@ -90,7 +52,6 @@ export default function LocationTrackerPage() {
         const { latitude, longitude } = position.coords;
         const newLocation = { lat: latitude, lng: longitude };
         setUserLocation(newLocation);
-        checkRestrictedArea(newLocation);
         toast({
           title: "Location Found",
           description: "Your current location is marked on the map.",

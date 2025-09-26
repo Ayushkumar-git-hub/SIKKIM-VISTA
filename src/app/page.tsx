@@ -1,7 +1,6 @@
 
 "use client";
 
-import { useEffect } from "react";
 import AppLayout from "@/components/layout/app-layout";
 import { Card, CardDescription, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { 
@@ -19,16 +18,14 @@ import {
   Users,
   LocateFixed,
   Sun,
-  Cloud,
   Cloudy,
   CloudRain,
-  Thermometer,
   Wind,
   Sunrise,
-  Sunset
+  Sunset,
+  Cpu
 } from "lucide-react";
 import Link from "next/link";
-import { useToast } from "@/hooks/use-toast";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 
@@ -60,6 +57,13 @@ const features = [
     icon: LocateFixed,
     href: "/location-tracker",
     color: "text-purple-500",
+  },
+   {
+    title: "AI Assistant",
+    description: "Get trip advice from our AI guide.",
+    icon: Cpu,
+    href: "/ai-assistant",
+    color: "text-orange-500",
   },
   {
     title: "Regional Calendar",
@@ -152,22 +156,7 @@ const WeatherIcon = ({ icon: Icon, condition }: { icon: React.ElementType, condi
 };
 
 export default function Home() {
-  const { toast } = useToast();
   const heroImage = PlaceHolderImages.find(img => img.id === 'hero-bg');
-
-  useEffect(() => {
-    const hasVisitedBefore = localStorage.getItem('hasVisitedSikkimExplorer');
-    if (!hasVisitedBefore) {
-      setTimeout(() => {
-        toast({
-          title: "Welcome from Yatra Yeti!",
-          description: "I'm your AI guide for Sikkim Explorer. I can help you plan your trip, find places, and much more. Click my icon on the bottom right to start chatting!",
-        });
-        localStorage.setItem('hasVisitedSikkimExplorer', 'true');
-      }, 1000);
-    }
-  }, [toast]);
-
 
   return (
     <AppLayout>

@@ -7,17 +7,14 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
-import { Camera, File, Loader2, Upload, Video, VideoOff } from "lucide-react";
-import { recognizeLand } from '@/ai/flows/recognize-land-flow';
+import { Camera, File, Loader2, Upload, VideoOff } from "lucide-react";
 import Image from 'next/image';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { Switch } from '@/components/ui/switch';
 import { Label } from '@/components/ui/label';
 
 export default function LandRecognitionPage() {
-  const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
-  const [recognitionResult, setRecognitionResult] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [isCameraOn, setIsCameraOn] = useState(true);
   const [hasCameraPermission, setHasCameraPermission] = useState<boolean | null>(null);
@@ -70,8 +67,6 @@ export default function LandRecognitionPage() {
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
     if (file) {
-      setSelectedFile(file);
-      setRecognitionResult(null);
       const reader = new FileReader();
       reader.onloadend = () => {
         setPreviewUrl(reader.result as string);
@@ -91,8 +86,6 @@ export default function LandRecognitionPage() {
             context.drawImage(video, 0, 0, video.videoWidth, video.videoHeight);
             const dataUri = canvas.toDataURL('image/jpeg');
             setPreviewUrl(dataUri);
-            setSelectedFile(null); // Clear file selection
-            setRecognitionResult(null);
         }
     } else {
         toast({
@@ -104,33 +97,10 @@ export default function LandRecognitionPage() {
   };
   
   const handleRecognize = async () => {
-    let dataUri: string | null = previewUrl;
-
-    if (!dataUri) {
-      toast({
-        variant: "destructive",
-        title: "No Image",
-        description: "Please upload or capture an image first.",
-      });
-      return;
-    }
-
-    setIsLoading(true);
-    setRecognitionResult(null);
-
-    try {
-      const result = await recognizeLand({ photoDataUri: dataUri });
-      setRecognitionResult(result.recognition);
-    } catch (error) {
-      console.error("Land Recognition Error:", error);
-      toast({
-        variant: "destructive",
-        title: "Error",
-        description: "Failed to recognize the land in the image.",
-      });
-    } finally {
-      setIsLoading(false);
-    }
+    toast({
+        title: "Feature Coming Soon",
+        description: "The AI land recognition feature is currently under development.",
+    });
   };
 
   return (
@@ -218,20 +188,10 @@ export default function LandRecognitionPage() {
             <Card>
                 <CardHeader>
                     <CardTitle>Recognition Result</CardTitle>
-                    <CardDescription>This is what our AI found in your image.</CardDescription>
+                    <CardDescription>This is what our AI would find in your image.</CardDescription>
                 </CardHeader>
                 <CardContent className="prose prose-sm max-w-none text-card-foreground">
-                    {isLoading && (
-                        <div className="flex items-center space-x-2">
-                            <Loader2 className="h-5 w-5 animate-spin text-muted-foreground" />
-                            <p className="text-muted-foreground">Analyzing image...</p>
-                        </div>
-                    )}
-                    {recognitionResult ? (
-                        <p>{recognitionResult}</p>
-                    ) : (
-                        !isLoading && <p className="text-muted-foreground">The analysis of your image will appear here.</p>
-                    )}
+                    <p className="text-muted-foreground">The AI analysis feature is coming soon. When available, the description of your image will appear here.</p>
                 </CardContent>
             </Card>
         </div>
