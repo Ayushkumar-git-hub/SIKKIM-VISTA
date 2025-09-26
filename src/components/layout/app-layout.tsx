@@ -33,6 +33,7 @@ import {
   LifeBuoy,
   Users,
   LocateFixed,
+  BookCopy,
 } from 'lucide-react';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 import { Separator } from '../ui/separator';
@@ -47,6 +48,7 @@ const navItems = [
   { href: '/document-hub', label: 'Document Hub', icon: FileText },
   { href: '/smart-maps', label: 'Smart Maps', icon: Map },
   { href: '/location-tracker', label: 'Location Tracker', icon: LocateFixed },
+  { href: '/sikkim-pedia', label: 'Sikkim Pedia', icon: BookCopy },
   { href: '/regional-calendar', label: 'Regional Calendar', icon: CalendarIcon },
   { href: '/narrative-walkthroughs', label: 'Narratives', icon: BookOpen },
   { href: '/local-crafts', label: 'Local Crafts', icon: ShoppingBag },

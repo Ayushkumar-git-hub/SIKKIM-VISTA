@@ -7,6 +7,12 @@
       "imageHint": "mountain valley"
     },
     {
+      "id": "sikkim-pedia-bg",
+      "description": "An ancient Buddhist scroll with intricate calligraphy.",
+      "imageUrl": "https://images.unsplash.com/photo-1615598179318-72675a89b6e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxidWRkaGlzdCUyMHNjcm9sbHxlbnwwfHx8fDE3NTg5NjE5MDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "buddhist scroll"
+    },
+    {
       "id": "immersive-1",
       "description": "360° view of Rumtek Monastery courtyard",
       "imageUrl": "https://images.unsplash.com/photo-1707521851701-2569efc103e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb25hc3RlcnklMjBjb3VydHlhcmR8ZW58MHx8fHwxNzU4NjgzMjExfDA&ixlib=rb-4.1.0&q=80&w=1080",
@@ -111,121 +117,121 @@
     {
       "id": "ticket-event-2",
       "description": "A crowd gathered under a full moon near a stupa.",
-      "imageUrl": "https://images.unsplash.com/photo-1587091999387-b548c3316f62?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxCdWRkaGlzdCUyMGZlc3RpdmFsfGVufDB8fHx8MTc1ODczMTE5M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1587091999387-b548c3316f62?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxCdWRkaGlzdCUyMGZlc3RpdmFsfGVufDB8fHx8MTc1ODczMTE5M3ww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "Buddhist festival"
     },
     {
       "id": "ticket-event-3",
       "description": "Masked dancers performing a traditional warrior dance.",
-      "imageUrl": "https://images.unsplash.com/photo-1725264171941-548b14da1d0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx3YXJyaW9yJTIwZGFuY2V8ZW58MHx8fHwxNzU4NzMxMTkzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1725264171941-548b14da1d0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx3YXJyaW9yJTIwZGFuY2V8ZW58MHx8fHwxNzU4NzMxMTkzfDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "warrior dance"
     },
     {
       "id": "ticket-event-4",
       "description": "An archery competition in a field.",
-      "imageUrl": "https://images.unsplash.com/photo-1631461698264-3bab5be9a674?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx0cmFkaXRpb25hbCUyMGFyY2hlcnl8ZW58MHx8fHwxNzU4NzMxMTkzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1631461698264-3bab5be9a674?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx0cmFkaXRpb25hbCUyMGFyY2hlcnl8ZW58MHx8fHwxNzU4NzMxMTkzfDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "traditional archery"
     },
     {
       "id": "ticket-place-1",
       "description": "A grand, colorful monastery entrance.",
-      "imageUrl": "https://images.unsplash.com/photo-1642355121699-b3fe0f258835?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb25hc3RlcnklMjBlbnRyYW5jZXxlbnwwfHx8fDE3NTg3MTIyMjd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1642355121699-b3fe0f258835?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb25hc3RlcnklMjBlbnRyYW5jZXxlbnwwfHx8fDE3NTg3MTIyMjd8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "monastery entrance"
     },
     {
       "id": "ticket-place-2",
       "description": "A beautiful high-altitude glacial lake.",
-      "imageUrl": "https://images.unsplash.com/photo-1670139018938-af8bf748a1bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxnbGFjaWFsJTIwbGFrZXxlbnwwfHx8fDE3NTg3MzExOTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1670139018938-af8bf748a1bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxnbGFjaWFsJTIwbGFrZXxlbnwwfHx8fDE3NTg3MzExOTN8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "glacial lake"
     },
     {
       "id": "ticket-place-3",
       "description": "A valley filled with blooming flowers.",
-      "imageUrl": "https://images.unsplash.com/photo-1605309341739-c155bced9699?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxmbG93ZXIlMjB2YWxsZXl8ZW58MHx8fHwxNzU4NjkwMjI2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1605309341739-c155bced9699?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxmbG93ZXIlMjB2YWxsZXl8ZW58MHx8fHwxNzU4NjkwMjI2fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "flower valley"
     },
     {
       "id": "ticket-place-4",
       "description": "A view of a snow-covered mountain range.",
-      "imageUrl": "https://images.unsplash.com/photo-1525784451128-d1488f52f03e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb3VudGFpbiUyMHJhbmdlfGVufDB8fHx8MTc1ODY5ODk4N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1525784451128-d1488f52f03e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb3VudGFpbiUyMHJhbmdlfGVufDB8fHx8MTc1ODY5ODk4N3ww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "mountain range"
     },
     {
       "id": "yeti-avatar",
       "description": "Avatar of Yatra Yeti, the AI assistant.",
-      "imageUrl": "https://images.unsplash.com/photo-1551632811-561732d1e306?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtb3VudGFpbiUyMHBlYWt8ZW58MHx8fHwxNzU4NjMwMDIwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1551632811-561732d1e306?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtb3VudGFpbiUyMHBlYWt8ZW58MHx8fHwxNzU4NjMwMDIwfDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "mountain peak"
     },
     {
       "id": "booking-hotel-1",
       "description": "A luxury hotel room with a view of mountains.",
-      "imageUrl": "https://images.unsplash.com/photo-1629140727571-9b5c6f6267b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxob3RlbCUyMHJvb218ZW58MHx8fHwxNzU4NzIxMjkzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1629140727571-9b5c6f6267b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxob3RlbCUyMHJvb218ZW58MHx8fHwxNzU4NzIxMjkzfDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "hotel room"
     },
     {
       "id": "booking-hotel-2",
       "description": "The exterior of a modern resort at dusk.",
-      "imageUrl": "https://images.unsplash.com/photo-1569664370706-e26397378b09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxyZXNvcnQlMjBleHRlcmlvcnxlbnwwfHx8fDE3NTg3MzExOTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1569664370706-e26397378b09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxyZXNvcnQlMjBleHRlcmlvcnxlbnwwfHx8fDE3NTg3MzExOTR8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "resort exterior"
     },
     {
       "id": "booking-hotel-3",
       "description": "A cozy boutique hotel room.",
-      "imageUrl": "https://images.unsplash.com/photo-1593194632872-3d19dab6e278?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxib3V0aXF1ZSUyMGhvdGVsfGVufDB8fHx8MTc1ODY4MTY0MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1593194632872-3d19dab6e278?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxib3V0aXF1ZSUyMGhvdGVsfGVufDB8fHx8MTc1ODY4MTY0MHww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "boutique hotel"
     },
     {
       "id": "booking-hotel-4",
       "description": "A hotel lobby with modern decor.",
-      "imageUrl": "https://images.unsplash.com/photo-1637730826933-54287f79e1c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxob3RlbCUyMGxvYmJ5fGVufDB8fHx8MTc1ODcwMTU4MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1637730826933-54287f79e1c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxob3RlbCUyMGxvYmJ5fGVufDB8fHx8MTc1ODcwMTU4MHww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "hotel lobby"
     },
     {
       "id": "booking-restaurant-1",
       "description": "A plate of steaming momos.",
-      "imageUrl": "https://images.unsplash.com/photo-1565355857989-333dff0b3dc8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxmb29kJTIwbW9tb3N8ZW58MHx8fHwxNzU4NzMxMTk0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1565355857989-333dff0b3dc8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxmb29kJTIwbW9tb3N8ZW58MHx8fHwxNzU4NzMxMTk0fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "food momos"
     },
     {
       "id": "booking-restaurant-2",
       "description": "A traditional Sikkimese thali.",
-      "imageUrl": "https://images.unsplash.com/photo-1742281258189-3b933879867a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxmb29kJTIwdGhhbGl8ZW58MHx8fHwxNzU4NzMxMTkzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1742281258189-3b933879867a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxmb29kJTIwdGhhbGl8ZW58MHx8fHwxNzU4NzMxMTkzfDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "food thali"
     },
     {
       "id": "booking-restaurant-3",
       "description": "A stylish coffee shop interior.",
-      "imageUrl": "https://images.unsplash.com/photo-1542372147193-a7aca54189cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjb2ZmZWUlMjBzaG9wfGVufDB8fHx8MTc1ODY5OTQ1Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1542372147193-a7aca54189cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjb2ZmZWUlMjBzaG9wfGVufDB8fHx8MTc1ODY5OTQ1Mnww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "coffee shop"
     },
     {
       "id": "booking-restaurant-4",
       "description": "A vibrant bar with live music.",
-      "imageUrl": "https://images.unsplash.com/photo-1450648757538-632c22bfdb7c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxiYXIlMjBtdXNpY3xlbnwwfHx8fDE3NTg3MzExOTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1450648757538-632c22bfdb7c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxiYXIlMjBtdXNpY3xlbnwwfHx8fDE3NTg3MzExOTN8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "bar music"
     },
     {
       "id": "booking-transport-1",
       "description": "A modern car on a mountain road.",
-      "imageUrl": "https://images.unsplash.com/photo-1505179458090-6beaea6fe314?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjYXIlMjBtb3VudGFpbnxlbnwwfHx8fDE3NTg3MzExOTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1505179458090-6beaea6fe314?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjYXIlMjBtb3VudGFpbnxlbnwwfHx8fDE3NTg3MzExOTN8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "car mountain"
     },
     {
       "id": "booking-transport-2",
       "description": "A shared taxi van.",
-      "imageUrl": "https://images.unsplash.com/photo-1748215210939-ad8b6c8c086d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx0YXhpJTIwdmFufGVufDB8fHx8MTc1ODczMTE5M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1748215210939-ad8b6c8c086d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx0YXhpJTIwdmFufGVufDB8fHx8MTc1ODczMTE5M3ww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "taxi van"
     },
     {
       "id": "booking-transport-3",
       "description": "A motorcycle parked with a scenic view.",
-      "imageUrl": "https://images.unsplash.com/photo-1643454207623-d7c262daeebb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb3RvcmN5Y2xlJTIwc2NlbmljfGVufDB8fHx8MTc1ODYyOTk0NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1643454207623-d7c262daeebb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb3RvcmN5Y2xlJTIwc2NlbmljfGVufDB8fHx8MTc1ODYyOTk0NHww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "motorcycle scenic"
     },
     {
       "id": "booking-transport-4",
       "description": "An airport terminal exterior.",
-      "imageUrl": "https://images.unsplash.com/photo-1527007622069-3a0241e1cd8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhaXJwb3J0JTIwdGVybWluYWx8ZW58MHx8fHwxNzU4NzE4ODYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1527007622069-3a0241e1cd8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhaXJwb3J0JTIwdGVybWluYWx8ZW58MHx8fHwxNzU4NzE4ODYyfDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "airport terminal"
     }
   ]
