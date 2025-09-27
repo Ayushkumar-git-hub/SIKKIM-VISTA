@@ -39,6 +39,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 import { Separator } from '../ui/separator';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { ModeToggle } from '../mode-toggle';
 
 const navItems = [
   { href: '/', label: 'Dashboard', icon: Home },
@@ -116,7 +117,7 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
             <div className='flex-1'>
                 {/* Can add breadcrumbs here */}
             </div>
-            {/* Can add search or other header items here */}
+            <ModeToggle />
         </header>
         {children}
       </SidebarInset>
