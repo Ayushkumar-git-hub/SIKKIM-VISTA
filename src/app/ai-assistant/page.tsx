@@ -1,3 +1,4 @@
+
 import AppLayout from "@/components/layout/app-layout";
 import { AiChat } from "@/components/ai-chat";
 import { PageHeader } from "@/components/page-header";
