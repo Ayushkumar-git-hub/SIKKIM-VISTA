@@ -1,3 +1,4 @@
+
 import type { Metadata } from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
@@ -19,7 +20,7 @@ const playfairDisplay = Playfair_Display({
 
 
 export const metadata: Metadata = {
-  title: 'Sikkim Explorer',
+  title: 'Sikkim Vista',
   description: 'Your guide to the treasures of Sikkim.',
 };
 

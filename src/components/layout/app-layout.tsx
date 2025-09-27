@@ -71,7 +71,7 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
               <Mountain className="w-7 h-7" />
             </Button>
             <div className="text-xl font-semibold font-headline text-sidebar-foreground group-data-[collapsible=icon]:hidden">
-              Sikkim Explorer
+              Sikkim Vista
             </div>
           </div>
         </SidebarHeader>

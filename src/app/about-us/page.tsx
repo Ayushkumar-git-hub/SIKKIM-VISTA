@@ -9,7 +9,7 @@ export default function AboutUsPage() {
     <AppLayout>
       <main className="flex-1 p-4 md:p-8">
         <PageHeader
-          title="About Sikkim Explorer"
+          title="About Sikkim Vista"
           description="Learn about our mission to bring you the ultimate guide to the treasures of Sikkim."
         />
 
@@ -22,7 +22,7 @@ export default function AboutUsPage() {
                     </CardTitle>
                 </CardHeader>
                 <CardContent className="text-muted-foreground space-y-4">
-                   <p>Sikkim Explorer was born from a deep love for the Himalayan region and a desire to share its wonders with the world. We believe that technology can bridge distances and bring people closer to the rich culture, breathtaking landscapes, and vibrant traditions of Sikkim. Our goal is to create a seamless, immersive, and informative travel experience for every visitor.</p>
+                   <p>Sikkim Vista was born from a deep love for the Himalayan region and a desire to share its wonders with the world. We believe that technology can bridge distances and bring people closer to the rich culture, breathtaking landscapes, and vibrant traditions of Sikkim. Our goal is to create a seamless, immersive, and informative travel experience for every visitor.</p>
                    <p>We are a passionate team of developers, designers, and travel enthusiasts committed to building a platform that not only serves as a guide but also fosters a deeper appreciation for this incredible destination.</p>
                 </CardContent>
             </Card>

@@ -203,7 +203,7 @@ export default function Home() {
             <section className="text-center">
               <Card className="bg-secondary/40 border-dashed">
                 <CardContent className="p-8">
-                  <h3 className="font-headline text-2xl mb-2">About Sikkim Explorer</h3>
+                  <h3 className="font-headline text-2xl mb-2">About Sikkim Vista</h3>
                   <p className="text-muted-foreground max-w-2xl mx-auto mb-4">
                     Our mission is to provide an innovative, all-in-one digital companion for tourists, promoting sustainable travel and celebrating the unique cultural and natural heritage of Sikkim.
                   </p>

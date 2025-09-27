@@ -111,7 +111,7 @@ export default function SignInPage() {
         />
          <div className="absolute top-8 left-8 text-white flex items-center gap-2">
             <Mountain className="h-6 w-6" />
-            <span className="text-xl font-semibold font-headline">Sikkim Explorer</span>
+            <span className="text-xl font-semibold font-headline">Sikkim Vista</span>
         </div>
       </div>
     </div>
