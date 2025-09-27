@@ -44,5 +44,30 @@ export const sikkimPediaData = {
         imageId: "narrative-1",
       },
     ]
+  },
+  
+  famousPlaces: {
+    title: "Famous Places",
+    description: "Discover the iconic destinations that make Sikkim a traveler's paradise.",
+    list: [
+      {
+        id: "gangtok",
+        name: "Gangtok",
+        description: "The vibrant capital of Sikkim, Gangtok is a bustling hill station that perfectly blends modernity with tradition. Ride the scenic ropeway for panoramic city views, stroll down the lively MG Marg, and explore nearby monasteries like Enchey and Rumtek. It's the perfect base to begin your Sikkimese adventure.",
+        imageId: "poi-gangtok",
+      },
+      {
+        id: "pelling",
+        name: "Pelling",
+        description: "Nestled in West Sikkim, Pelling offers arguably the most breathtaking close-up views of the mighty Khangchendzonga and its surrounding peaks. It's a land of monasteries, lakes, and waterfalls, including the historic Pemayangtse Monastery, the sacred Khecheopalri Lake, and the spectacular Kanchenjunga Falls.",
+        imageId: "poi-pelling",
+      },
+      {
+        id: "yumthang",
+        name: "Yumthang Valley",
+        description: "Known as the 'Valley of Flowers', Yumthang in North Sikkim is a paradise for nature lovers. During spring, it bursts into a riot of colors with countless species of rhododendrons. The valley is also home to a hot spring, offering a therapeutic experience amidst the snow-clad mountains.",
+        imageId: "ticket-place-3",
+      }
+    ]
   }
 };

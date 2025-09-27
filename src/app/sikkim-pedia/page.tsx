@@ -17,7 +17,7 @@ import {
 import { sikkimPediaData } from "@/lib/sikkim-pedia-data";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import Image from "next/image";
-import { Book, Landmark, Sprout } from "lucide-react";
+import { Book, Landmark, Sprout, MapPin } from "lucide-react";
 
 export default function SikkimPediaPage() {
   const heroImage = PlaceHolderImages.find((img) => img.id === "sikkim-pedia-bg");
@@ -79,6 +79,40 @@ export default function SikkimPediaPage() {
               </CardContent>
             </Card>
           </div>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <MapPin className="w-6 h-6 text-primary" />
+                <span>{sikkimPediaData.famousPlaces.title}</span>
+              </CardTitle>
+              <CardDescription>
+                {sikkimPediaData.famousPlaces.description}
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="grid md:grid-cols-3 gap-6">
+                {sikkimPediaData.famousPlaces.list.map((place) => {
+                  const image = PlaceHolderImages.find(img => img.id === place.imageId);
+                  return (
+                    <Card key={place.id} className="overflow-hidden">
+                       {image && (
+                          <div className="relative aspect-video w-full">
+                            <Image src={image.imageUrl} alt={place.name} fill className="object-cover" data-ai-hint={image.imageHint} />
+                          </div>
+                        )}
+                      <CardHeader>
+                        <CardTitle className="text-xl">{place.name}</CardTitle>
+                      </CardHeader>
+                      <CardContent>
+                        <p className="text-muted-foreground text-sm">{place.description}</p>
+                      </CardContent>
+                    </Card>
+                  )
+                })}
+              </div>
+            </CardContent>
+          </Card>
 
           <Card>
             <CardHeader>

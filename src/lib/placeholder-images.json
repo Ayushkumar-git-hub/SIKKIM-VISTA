@@ -239,6 +239,18 @@
       "description": "A monastery on a hilltop.",
       "imageUrl": "https://images.unsplash.com/photo-1662991306359-22a36a992a83?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb25hc3RlcnklMjBoaWxsdG9wfGVufDB8fHx8MTc1ODk2MjAzNnww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "monastery hilltop"
+    },
+    {
+      "id": "poi-gangtok",
+      "description": "A city view with mountains in the background.",
+      "imageUrl": "https://images.unsplash.com/photo-1603960411833-28f096894c50?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaXR5JTIwbW91bnRhaW4lMjB2aWV3fGVufDB8fHx8MTc1ODk2MjIzN3ww&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "city mountain view"
+    },
+    {
+      "id": "poi-pelling",
+      "description": "A small town in a mountain valley.",
+      "imageUrl": "https://images.unsplash.com/photo-1628703724622-b5cc4f753793?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx2YWxsZXklMjByaXZlcnxlbnwwfHx8fDE3NTg3MzExOTR8MA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "mountain town"
     }
   ]
 }
