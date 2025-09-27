@@ -9,7 +9,7 @@ export default function AiAssistantPage() {
         <main className="flex-1 flex flex-col p-4 md:p-6">
             <PageHeader
                 title="Yatra Yeti"
-                description="Your personal guide to Sikkim. Ask for itineraries, travel tips, or cultural insights."
+                description="Your AI-powered guide to Sikkim. Ask me to build itineraries, find travel information, or get cultural insights."
             />
             <div className="flex-1 bg-card border rounded-lg shadow-sm overflow-hidden">
                 <AiChat />

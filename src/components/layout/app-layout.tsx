@@ -21,7 +21,7 @@ import {
   Camera,
   FileText,
   Map,
-  Bot,
+  Cpu,
   Calendar as CalendarIcon,
   BookOpen,
   ShoppingBag,
@@ -37,26 +37,24 @@ import {
 } from 'lucide-react';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 import { Separator } from '../ui/separator';
-import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '../ui/sheet';
-import { AiChat } from '../ai-chat';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const navItems = [
   { href: '/', label: 'Dashboard', icon: Home },
-  { href: '/immersive-views', label: 'Immersive Views', icon: Camera },
-  { href: '/document-hub', label: 'Document Hub', icon: FileText },
+  { href: '/ai-assistant', label: 'AI Assistant', icon: Cpu },
+  { href: '/sikkim-pedia', label: 'Sikkim Pedia', icon: BookCopy },
   { href: '/smart-maps', label: 'Smart Maps', icon: Map },
   { href: '/location-tracker', label: 'Location Tracker', icon: LocateFixed },
-  { href: '/sikkim-pedia', label: 'Sikkim Pedia', icon: BookCopy },
+  { href: '/ticket-booking', label: 'Bookings', icon: Ticket },
+  { href: '/document-hub', label: 'Document Hub', icon: FileText },
   { href: '/regional-calendar', label: 'Regional Calendar', icon: CalendarIcon },
   { href: '/narrative-walkthroughs', label: 'Narratives', icon: BookOpen },
   { href: '/local-crafts', label: 'Local Crafts', icon: ShoppingBag },
+  { href: '/immersive-views', label: 'Immersive Views', icon: Camera },
   { href: '/land-recognition', label: 'Land Recognition', icon: ScanLine },
-  { href: '/ticket-booking', label: 'Bookings', icon: Ticket },
   { href: '/help', label: 'Help & FAQ', icon: LifeBuoy },
   { href: '/about-us', label: 'About Us', icon: Users },
-  { href: '/ai-assistant', label: 'AI Assistant', icon: Bot },
 ];
 
 export default function AppLayout({ children }: { children: React.ReactNode }) {
@@ -65,7 +63,7 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
 
   return (
     <SidebarProvider>
-      <Sidebar>
+      <Sidebar collapsible="icon">
         <SidebarHeader>
           <div className="flex items-center gap-3 p-2">
             <Button variant="ghost" size="icon" className="text-sidebar-foreground">
