@@ -191,7 +191,7 @@ export const narrativeWalkthroughs: {
       hi: "सिक्किम के चोग्याल: एक शाही इतिहास",
       es: "Los Chogyals de Sikkim: Una Historia Real",
       fr: "Les Chogyals du Sikkim : Une Histoire Royale",
-      de: "Die Chogyals von Sikkim: Eine königliche Geschichte",
+de: "Die Chogyals von Sikkim: Eine königliche Geschichte",
       zh: "锡金的却嘉王朝：一部皇家历史",
       ja: "シッキムのチョギャル：王室の歴史",
       ru: "Чогьялы Сиккима: Королевская история",
@@ -456,7 +456,7 @@ export const transportBookings = [
     description: 'Economical option for traveling between major towns.',
     imageId: 'booking-transport-2'
   },
-  {
+{
     id: 'transport-3',
     name: 'Motorbike Rental (Per Day)',
     price: '800.00',
