@@ -1,0 +1,84 @@
+.homepage-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f3f7f6;
+  min-height: 100vh;
+}
+.hero-section {
+  text-align: center;
+  padding: 4rem 1rem 2rem 1rem;
+  background: linear-gradient(120deg, #4caf50 0%, #81c784 100%);
+  color: #fff;
+  border-radius: 0 0 40px 40px;
+  margin-bottom: 2rem;
+}
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+}
+.hero-section p {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+.cta-button {
+  padding: 0.9rem 2.2rem;
+  background-color: #ffd600;
+  color: #388e3c;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.14);
+  transition: background 0.2s, color 0.2s;
+  border: none;
+  cursor: pointer;
+}
+.features-section {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+.feature-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 3px 18px rgba(44, 62, 80, 0.11);
+  padding: 2rem 1.5rem;
+  width: 260px;
+  text-align: center;
+  transition: box-shadow 0.2s;
+}
+.feature-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+.feature-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.7rem;
+  color: #388e3c;
+}
+.feature-card p {
+  font-size: 1rem;
+  color: #444;
+}
+.feature-card:hover {
+  box-shadow: 0 10px 32px rgba(44, 62, 80, 0.19);
+}
+@media (max-width: 900px) {
+  .features-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .feature-card {
+    width: 90vw;
+    margin-bottom: 2rem;
+  }
+}
