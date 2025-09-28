@@ -1,3 +1,4 @@
+
 "use client";
 
 import React, { useState, useRef, useEffect } from 'react';
@@ -168,7 +169,7 @@ export default function LandRecognitionPage() {
                 <CardFooter className="flex-col items-stretch gap-4">
                     {previewUrl && (
                         <div className="relative w-full aspect-video rounded-md overflow-hidden border">
-                            <Image src={previewUrl} alt="Selected preview" layout="fill" objectFit="cover" />
+                            <Image src={previewUrl} alt="Selected preview" fill objectFit="cover" />
                         </div>
                     )}
                     <Button onClick={handleRecognize} disabled={!previewUrl || isLoading}>
