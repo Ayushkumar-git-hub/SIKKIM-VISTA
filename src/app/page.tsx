@@ -25,6 +25,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Button } from "@/components/ui/button";
+import WeatherWidget from "@/components/WeatherWidget";
 
 const planYourTripFeatures = [
   { title: "AI Assistant", description: "Personalized trip planning & tips.", icon: Cpu, href: "/ai-assistant" },
@@ -106,6 +107,10 @@ export default function Home() {
         </section>
 
         <div className="p-4 md:p-8 space-y-16">
+
+            <section className="-mt-32 relative z-20">
+                <WeatherWidget />
+            </section>
             
             <section id="plan">
               <div className="flex items-center gap-4 mb-8">
